@@ -1,9 +1,14 @@
 #!/usr/bin/env python
 
+import codecs
+from datetime import datetime
 import gspread
+import json
 from oauth2client.client import GoogleCredentials
 import os
 from pymongo import MongoClient
+import re
+from dateutil import parser
 
 DAPPS_SHEET_KEY = '1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g'
 MONGODB_URL = os.getenv('MONGODB_URL', 'mongodb://127.0.0.1:3001/meteor')
@@ -20,6 +25,7 @@ def sync_sheet(worksheet, db):
             name, description, url, github, reddit, contact, tags, license, platform, status, last_update = cell_list
             tags = [tag.strip() for tag in tags.split(',')]
             db.dapps.update({'name': name}, {'$set': {
+                'row_nr': row_nr,
                 'description': description,
                 'url': url,
                 'github': github,
@@ -32,6 +38,40 @@ def sync_sheet(worksheet, db):
                 'last_update': last_update}}, upsert=True)
 
         row_nr += 1
+
+def import_json(filename):
+    data = []
+    with codecs.open(filename, 'rU', 'utf-8') as f:
+        for line in f:
+            data.append(json.loads(line))
+    return data
+
+def update_sheet(worksheet, db, data):
+    for row in data:
+        dapp_name = row['dapp_name']
+        dt = parser.parse(row['timestamp'])
+        timestamp = dt.strftime('%Y-%m-%d')
+        print row['timestamp'], dt, timestamp
+        db_entry = db.dapps.find_one({'name': re.compile('^' + re.escape(dapp_name) + '$', re.IGNORECASE)})
+        if db_entry:
+            print 'Existing', row['dapp_name'], db_entry['row_nr']
+            print worksheet.row_values(db_entry['row_nr'] + 1)
+        else:
+            print 'New', row['dapp_name']
+            output = [
+                row['dapp_name'],
+                row['description'],
+                row['site'],
+                row['github'],
+                row['reddit'],
+                row['contact'],
+                row['tags'],
+                row['license'],
+                'Ethereum',
+                row['status'],
+                timestamp,
+            ]
+            worksheet.append_row(output)
 
 def main():
     credentials = GoogleCredentials.get_application_default()
@@ -46,6 +86,8 @@ def main():
     db.dapps.ensure_index('name')
 
     sync_sheet(worksheet, db)
+    #data = import_json('import.json')
+    #update_sheet(worksheet, db, data)
 
 if __name__ == '__main__':
     print("starting sync")
