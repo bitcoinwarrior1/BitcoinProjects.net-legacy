@@ -13,7 +13,7 @@ if (Meteor.isServer) {
     url: "/api/dapps"
   })
 
-  Meteor.publish('dapps', function (tag) {
+  Meteor.publish('dapps-by-tag', function (tag) {
     return App.cols.Dapps.find({tags: tag})
   }, {
     url: "/api/dapps-by-tag/:0"
