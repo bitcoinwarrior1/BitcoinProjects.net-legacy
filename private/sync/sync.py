@@ -22,7 +22,7 @@ def sync_sheet(worksheet, db):
         print(cell_list)
 
         if row_nr > 0:
-            name, description, url, github, reddit, contact, tags, license, platform, status, last_update, contract_address, contract_address2, icon = cell_list
+            name, description, url, github, reddit, contact, tags, license, platform, status, last_update, contract_address_mainnet, contract_address_ropsten, icon = cell_list
             tags = [tag.strip() for tag in tags.split(',')]
             db.dapps.update({'name': name}, {'$set': {
                 'row_nr': row_nr,
@@ -35,8 +35,11 @@ def sync_sheet(worksheet, db):
                 'license': license,
                 'platform': platform,
                 'status': status,
+                'last_update': last_update,
+                'contract_address_mainnet': contract_address_mainnet,
+                'contract_address_ropsten': contract_address_ropsten,
                 'icon': icon,
-                'last_update': last_update}}, upsert=True)
+                }}, upsert=True)
 
         row_nr += 1
 
@@ -86,8 +89,8 @@ def main():
     db = client.get_default_database()
     db.dapps.ensure_index('name')
 
-    #data = import_json('import.json')
-    #update_sheet(worksheet, db, data)
+    # data = import_json('import.json')
+    # update_sheet(worksheet, db, data)
     sync_sheet(worksheet, db)
 
 if __name__ == '__main__':

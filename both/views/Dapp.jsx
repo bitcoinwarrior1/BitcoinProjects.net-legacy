@@ -35,6 +35,11 @@ App.Dapp = React.createClass({
             </div>
             <div className='section status-section'>
               <p className='icon-row center-align'>
+                { this.props.dapp.url &&
+                  <a target='_blank' href={this.props.dapp.url}>
+                    <i className='icon-link fa fa-fw fa-globe'></i>
+                  </a>
+                }
                 { this.props.dapp.github &&
                   <a target='_blank' href={this.props.dapp.github}>
                     {this.props.dapp.license}
@@ -44,6 +49,16 @@ App.Dapp = React.createClass({
                 { this.props.dapp.reddit &&
                   <a target='_blank' href={this.props.dapp.reddit}>
                     <i className='icon-link fa fa-fw fa-reddit'></i>
+                  </a>
+                }
+                { this.props.dapp.contract_address_mainnet &&
+                  <a target='_blank' href={'https://etherscan.io/address/' + this.props.dapp.contract_address_mainnet}>
+                    <i className='icon-link fa fa-fw fa-cogs'></i>
+                  </a>
+                }
+                { this.props.dapp.contract_address_ropsten &&
+                  <a target='_blank' href={'https://ropsten.io/address/' + this.props.dapp.contract_address_ropsten}>
+                    <i className='icon-link fa fa-fw fa-bug'></i>
                   </a>
                 }
               </p>
