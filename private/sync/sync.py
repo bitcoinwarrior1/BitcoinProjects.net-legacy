@@ -22,7 +22,7 @@ def sync_sheet(worksheet, db):
         print(cell_list)
 
         if row_nr > 0:
-            name, description, url, github, reddit, contact, tags, license, platform, status, last_update, contract_address, contract_address2 = cell_list
+            name, description, url, github, reddit, contact, tags, license, platform, status, last_update, contract_address, contract_address2, icon = cell_list
             tags = [tag.strip() for tag in tags.split(',')]
             db.dapps.update({'name': name}, {'$set': {
                 'row_nr': row_nr,
@@ -35,6 +35,7 @@ def sync_sheet(worksheet, db):
                 'license': license,
                 'platform': platform,
                 'status': status,
+                'icon': icon,
                 'last_update': last_update}}, upsert=True)
 
         row_nr += 1
