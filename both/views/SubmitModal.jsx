@@ -62,22 +62,32 @@ App.SubmitModal = React.createClass({
             </div>
             <div className='row slim-row'>
               <div className='input-field col s12 m6'>
-                <input name='site' type='text' maxLength='64'/>
+                <input name='site' type='url' pattern="https?://.+" maxLength='64'/>
                 <label>Site URL</label>
               </div>
               <div className='input-field col s12 m6'>
-                <input name='reddit' type='text' maxLength='128'/>
+                <input name='reddit' type='url' pattern="https?://.+" maxLength='128'/>
                 <label>Reddit URL</label>
               </div>
             </div>
             <div className='row slim-row'>
               <div className='input-field col s12 m6'>
-                <input name='github' type='text' maxLength='64'/>
+                <input name='github' type='url' pattern="https?://.+" maxLength='64'/>
                 <label>GitHub URL</label>
               </div>
               <div className='input-field col s12 m6'>
                 <input name='license' type='text' required maxLength='10'/>
                 <label>License *</label>
+              </div>
+            </div>
+            <div className='row slim-row'>
+              <div className='input-field col s12 m6'>
+                <input name='contract_address_mainnet' type='text' pattern="(0x)?[0-9a-fA-F]{40}" maxLength='42'/>
+                <label>Mainnet contract address</label>
+              </div>
+              <div className='input-field col s12 m6'>
+                <input name='contract_address_ropsten' type='text' pattern="(0x)?[0-9a-fA-F]{40}" maxLength='42'/>
+                <label>Ropsten contract address</label>
               </div>
             </div>
             <div className='row slim-row'>

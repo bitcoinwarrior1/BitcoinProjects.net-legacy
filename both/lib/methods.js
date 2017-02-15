@@ -19,7 +19,9 @@ Meteor.methods({
       github: ShortString,
       license: ShortString,
       tags: ShortString,
-      status: ShortString
+      status: ShortString,
+      contract_address_mainnet: ShortString,
+      contract_address_ropsten: ShortString,
     })
 
     data.timestamp = new Date().toLocaleString()

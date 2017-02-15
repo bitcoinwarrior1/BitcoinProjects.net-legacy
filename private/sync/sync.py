@@ -74,6 +74,8 @@ def update_sheet(worksheet, db, data):
                 'Ethereum',
                 row['status'],
                 timestamp,
+                row['contract_address_mainnet'],
+                row['contract_address_ropsten'],
             ]
             worksheet.append_row(output)
 
@@ -89,8 +91,8 @@ def main():
     db = client.get_default_database()
     db.dapps.ensure_index('name')
 
-    # data = import_json('import.json')
-    # update_sheet(worksheet, db, data)
+    data = import_json('import.json')
+    update_sheet(worksheet, db, data)
     sync_sheet(worksheet, db)
 
 if __name__ == '__main__':
