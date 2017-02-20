@@ -19,7 +19,7 @@ App.SearchBox = React.createClass({
           <input ref='searchBox' onKeyUp={this.handleKeyup} type='text' className='search-box'></input>
           <label>Search</label>
         </div>
-        <i ref='infoButton' className='fa fa-fw fa-info-circle info-button search-button' data-target='infoModal'></i>
+        <i ref='infoButton' className='fa fa-fw fa-plus-circle info-button search-button' data-target='infoModal'></i>
       </div>
     )
   }
