@@ -5,7 +5,7 @@ FlowRouter.route('/', {
     ReactLayout.render(App.DappsList, {})
   }
 });
-FlowRouter.route('dapp/:id', {
+FlowRouter.route('/dapp/:id', {
   action (params) {
     console.log(params.id);
   }
