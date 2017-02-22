@@ -48,12 +48,12 @@ App.DappsList = React.createClass({
         query = {$or: []}
         for (var i = 0; i < this.searchFields.length; i++) {
           var thisField = {}
-          thisField[this.searchFields[i]] = { $regex: searchQuery, $options: 'i' }
+          thisField[this.searchFields[i]] = {$regex: searchQuery, $options: 'i'}
           query.$or.push(thisField)
         }
       }
     }
-    data.dapps = App.cols.Dapps.find(query, { sort: sort, limit: limit }).fetch()
+    data.dapps = App.cols.Dapps.find(query, {sort: sort, limit: limit}).fetch()
     data.count = App.cols.Dapps.find(query).count()
     data.resultType = searchQuery.length > 0 ? 'found' : 'listed'
     return data
@@ -104,7 +104,7 @@ App.DappsList = React.createClass({
       return this.data.dapps.map(dapp => {
         return <App.Dapp
           key={dapp._id}
-          dapp={dapp} />
+          dapp={dapp}/>
       })
     } else {
       return (
@@ -133,7 +133,7 @@ App.DappsList = React.createClass({
 
         <div className='black'>
           <div className='row'>
-            < App.FilterArea data={this.data} />
+            < App.FilterArea data={this.data}/>
             <section ref='dappSection' className='dapps row'>
               {this.renderDapps()}
             </section>
@@ -147,7 +147,8 @@ App.DappsList = React.createClass({
                 UI by <a target='_blank' href='http://hitchcott.com'>Hitchcott</a>
               </div>
               <div className='col s12 m4'>
-                Fork me on <a target='_blank' href='https://github.com/EtherCasts/state-of-the-dapps'><i className='fa fa-fw fa-github'></i>GitHub</a>
+                Fork me on <a target='_blank' href='https://github.com/EtherCasts/state-of-the-dapps'><i
+                className='fa fa-fw fa-github'></i>GitHub</a>
               </div>
             </div>
           </footer>

@@ -8,7 +8,6 @@ var sortNames = {
 }
 
 App.FilterArea = React.createClass({
-
   propTypes: {
     data: React.PropTypes.object
   },
