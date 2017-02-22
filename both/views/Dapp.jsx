@@ -31,7 +31,7 @@ App.Dapp = React.createClass({
               </div>
               <div className='card-description'>
                 <p>{this.props.dapp.description}</p>
-                <a href={`/dapp/${this.props.dapp._id}`}>Read More</a>
+                <a target='_blank' href={`/dapp/${this.props.dapp._id}`}>Read More</a>
               </div>
             </div>
             <div className='section status-section'>

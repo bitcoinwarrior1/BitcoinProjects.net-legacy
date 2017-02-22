@@ -7,7 +7,7 @@ FlowRouter.route('/', {
 });
 FlowRouter.route('/dapp/:id', {
   action (params) {
-    console.log(params.id);
+    ReactLayout.render(App.DappsView, {_id: params.id})
   }
 });
 
