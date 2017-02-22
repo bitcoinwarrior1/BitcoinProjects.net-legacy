@@ -31,6 +31,7 @@ App.Dapp = React.createClass({
               </div>
               <div className='card-description'>
                 <p>{this.props.dapp.description}</p>
+                <a href={`/dapp/${this.props.dapp._id}`}>Read More</a>
               </div>
             </div>
             <div className='section status-section'>
@@ -60,6 +61,7 @@ App.Dapp = React.createClass({
                 <a target='_blank' href={'https://ropsten.io/address/' + this.props.dapp.contract_address_ropsten}>
                   <i className='icon-link fa fa-fw fa-bug'></i>
                 </a>
+
                 }
               </p>
               <p className='pull-right'>
