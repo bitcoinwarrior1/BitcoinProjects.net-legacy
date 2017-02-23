@@ -14,9 +14,10 @@ App.IconButton = React.createClass({
     let {style, customClass, target} = this.props;
     return (
       <i ref='iconButton' style={style}
-         className={`${customClass} modal-trigger`}
+         className={`${customClass} iconButton`}
          data-target={target}
          onClick={this.handleClick}
+         aria-hidden="true"
       ></i>
     );
   }

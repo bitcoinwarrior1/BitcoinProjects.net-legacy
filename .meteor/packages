@@ -25,7 +25,7 @@ materialize:materialize
 kadira:flow-router-ssr
 kadira:react-layout
 fourseven:scss
-
+fortawesome:fontawesome
 fastclick
 
 # dev only
