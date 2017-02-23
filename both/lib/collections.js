@@ -2,7 +2,8 @@
 this.App = {}
 
 App.cols = {
-  Dapps: new Mongo.Collection('dapps')
+  Dapps: new Mongo.Collection('dapps'),
+  Queue: new Mongo.Collection('queue')
 }
 
 if (Meteor.isServer) {

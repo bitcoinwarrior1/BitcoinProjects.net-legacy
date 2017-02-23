@@ -27,6 +27,8 @@ Meteor.methods({
     data.timestamp = new Date().toLocaleString()
 
     if (Meteor.isServer) {
+      App.cols.Queue.insert(data)
+
       Email.send({
         to: process.env.MAIL_TO,
         from: process.env.MAIL_FROM,
