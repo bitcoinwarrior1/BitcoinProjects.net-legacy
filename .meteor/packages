@@ -21,15 +21,14 @@ mobile-experience
 email
 ecmascript
 react@=0.1.12
-
 materialize:materialize
 kadira:flow-router-ssr
 kadira:react-layout
 fourseven:scss
-
+fortawesome:fontawesome
 fastclick
 
 # dev only
-msavin:mongol
+meteortoys:allthings
 simple:rest
 okgrow:analytics
