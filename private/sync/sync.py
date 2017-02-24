@@ -50,6 +50,9 @@ def import_json(filename):
             data.append(json.loads(line))
     return data
 
+def import_queue(db):
+    return list(db.queue.find())
+
 def update_sheet(worksheet, db, data):
     for row in data:
         dapp_name = row['dapp_name']
@@ -91,7 +94,7 @@ def main():
     db = client.get_default_database()
     db.dapps.ensure_index('name')
 
-    # data = import_json('import.json')
+    # data = import_queue(db)
     # update_sheet(worksheet, db, data)
     sync_sheet(worksheet, db)
 
