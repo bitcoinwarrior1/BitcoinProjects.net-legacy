@@ -62,8 +62,8 @@ App.SubmitModal = React.createClass({
             </div>
             <div className='row slim-row'>
               <div className='input-field col s12 m6'>
-                <input name='site' type='url' pattern="https?://.+" maxLength='64'/>
-                <label>Site URL</label>
+                <input name='site' type='url' pattern="https?://.+" required maxLength='64'/>
+                <label>Site URL *</label>
               </div>
               <div className='input-field col s12 m6'>
                 <input name='reddit' type='url' pattern="https?://.+" maxLength='128'/>
