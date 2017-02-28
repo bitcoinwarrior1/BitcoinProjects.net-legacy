@@ -53,11 +53,11 @@ App.SubmitModal = React.createClass({
             <div className='row slim-row'>
               <div className='input-field col s12 m6'>
                 <input className='validate' name='contact' type='text' required maxLength='32'/>
-                <label>Author Name *</label>
+                <label>Organisation / Contact Name *</label>
               </div>
               <div className='input-field col s12 m6'>
                 <input className='validate' name='contact_email' type='email' required maxLength='32'/>
-                <label>Author Email (not shown publicly) *</label>
+                <label>Contact Email (not shown publicly) *</label>
               </div>
             </div>
             <div className='row slim-row'>
