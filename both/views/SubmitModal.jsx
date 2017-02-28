@@ -57,7 +57,7 @@ App.SubmitModal = React.createClass({
               </div>
               <div className='input-field col s12 m6'>
                 <input className='validate' name='contact_email' type='email' required maxLength='32'/>
-                <label>Author Email *</label>
+                <label>Author Email (not shown publicly) *</label>
               </div>
             </div>
             <div className='row slim-row'>
@@ -93,7 +93,7 @@ App.SubmitModal = React.createClass({
             <div className='row slim-row'>
               <div className='input-field col s12'>
                 <input name='tags' type='text' maxLength='128'/>
-                <label>Tags (comma seperated)</label>
+                <label>Tags (comma separated)</label>
               </div>
             </div>
             <div className='row'>
