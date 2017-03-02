@@ -4,31 +4,33 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-base
-standard-minifiers
-mongo
+meteor-base@1.0.4
+mongo@1.1.15
 blaze-html-templates
-session
-jquery
-tracker
-logging
-reload
-random
-ejson
+session@1.1.7
+jquery@1.11.10
+tracker@1.1.2
+logging@1.1.17
+reload@1.1.11
+random@1.0.10
+ejson@1.0.13
 spacebars
-check
-mobile-experience
-email
-ecmascript
+check@1.2.4
+mobile-experience@1.0.4
+email@1.1.18
+ecmascript@0.6.3
 react@=0.1.12
 materialize:materialize
 kadira:flow-router-ssr
 kadira:react-layout
 fourseven:scss
 fortawesome:fontawesome
-fastclick
+fastclick@1.0.13
 
 # dev only
 meteortoys:allthings
 simple:rest
 okgrow:analytics
+standard-minifier-css
+standard-minifier-js
+shell-server
