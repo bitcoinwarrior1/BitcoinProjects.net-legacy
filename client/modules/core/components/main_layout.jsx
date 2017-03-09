@@ -1,9 +1,16 @@
-import React from 'react';
-
-const Layout = ({content = () => null }) => (
+import React from "react";
+import Header from "/client/modules/core/containers/header";
+import Footer from "/client/modules/core/containers/footer";
+import FilterArea from "/client/modules/core/containers/filter_area";
+const Layout = ({content = () => null}) => (
   <div>
-    <div>
-      {content()}
+    <Header/>
+    <div className='black'>
+      <div className='row'>
+        <FilterArea/>
+        {content()}
+        <Footer/>
+      </div>
     </div>
   </div>
 );
