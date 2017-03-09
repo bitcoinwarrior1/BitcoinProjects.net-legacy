@@ -1,3 +1,4 @@
+/*
 App.InfoModal = React.createClass({
 
   clickSubmitDapp (e) {
@@ -63,3 +64,4 @@ App.InfoModal = React.createClass({
   }
 
 })
+*/

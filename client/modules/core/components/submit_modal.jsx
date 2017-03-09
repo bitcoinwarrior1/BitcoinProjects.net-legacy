@@ -1,36 +1,11 @@
-/*
-App.SubmitModal = React.createClass({
+import React from "react";
 
-  handleSubmit (e) {
-    e.preventDefault()
-    if (this.refs.antiSpam.getDOMNode().value !== '42') {
-      window.alert('You failed the spam filter test.')
-    } else {
-      var dataObj = {}
-      var $thisForm = $(this.refs.submissionForm.getDOMNode())
-      $thisForm.serializeArray().forEach((item, i) => {
-        dataObj[item.name] = item.value
-      })
-      Meteor.call('newSubmission', dataObj, (err) => {
-        if (err) {
-          window.alert(err)
-        } else {
-          window.alert('Thank you. Your submission will be reviewed.')
-          $thisForm[0].reset()
-          $(this.getDOMNode()).closeModal()
-        }
-      })
-    }
-  },
+class SubmitModal extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-  componentDidMount () {
-    $('input', this.refs.submissionForm.getDOMNode()).each(function () {
-      var $this = $(this)
-      $this.attr('length', $this.attr('maxlength')).characterCounter()
-    })
-  },
-
-  render () {
+  render() {
     return (
       <div id='submitModal' className='modal'>
         <div className='modal-content'>
@@ -124,8 +99,8 @@ App.SubmitModal = React.createClass({
           </form>
         </div>
       </div>
-    )
+    );
   }
+}
 
-})
-*/
+export default SubmitModal;

@@ -1,3 +1,4 @@
+/*
 App.Dapp = React.createClass({
   propTypes: {
     dapp: React.PropTypes.object.isRequired
@@ -75,4 +76,5 @@ App.Dapp = React.createClass({
       </div>
     )
   }
-})
+});
+*/

@@ -1,4 +1,5 @@
-/* globals Session */
+/*
+/!* globals Session *!/
 
 var sortTypes = ['last_update', 'status']
 
@@ -58,3 +59,4 @@ App.FilterArea = React.createClass({
     )
   }
 })
+*/

@@ -4,33 +4,37 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-base@1.0.4
-mongo@1.1.15
-blaze-html-templates
-session@1.1.7
-jquery@1.11.10
-tracker@1.1.2
-logging@1.1.17
+meteor-base@1.0.4             # Packages every Meteor app needs to have
+mobile-experience@1.0.4       # Packages for a great mobile UX
+mongo@1.1.15                   # The database Meteor supports right now
+blaze-html-templates@1.0.4 # Compile .html files into Meteor Blaze views
+reactive-var@1.0.11            # Reactive variable for tracker
+jquery@1.11.10                  # Helpful client-side library
+tracker@1.1.2                 # Meteor's client-side reactive programming librarylogging@1.1.17
+
+standard-minifier-css@1.3.3   # CSS minifier run for production mode
+standard-minifier-js@1.2.2    # JS minifier run for production mode
+es5-shim@4.6.15                # ECMAScript 5 compatibility for older browsers.
+ecmascript@0.6.3              # Enable ECMAScript2015+ syntax in app code
+shell-server@0.2.2            # Server-side component of the `meteor shell` command
+
 reload@1.1.11
 random@1.0.10
 ejson@1.0.13
 spacebars
 check@1.2.4
-mobile-experience@1.0.4
 email@1.1.18
-ecmascript@0.6.3
 react@=0.1.12
 materialize:materialize
-kadira:flow-router-ssr
-kadira:react-layout
 fourseven:scss
 fortawesome:fontawesome
 fastclick@1.0.13
+kadira:dochead                  # DocHead is an isomorphic way to manipulate document.head for Meteor apps.
+
+kadira:flow-router
+reactive-dict
 
 # dev only
 meteortoys:allthings
 simple:rest
 okgrow:analytics
-standard-minifier-css
-standard-minifier-js
-shell-server
