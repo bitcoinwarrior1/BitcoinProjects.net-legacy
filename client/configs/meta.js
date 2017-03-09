@@ -12,4 +12,5 @@ var linkInfo = [{rel: "icon", type: "image/png", href: "assets/logo/favicon.png"
 _.each(linkInfo, function (linkInfo) {
   DocHead.addLink(linkInfo);
 });
-
+var hotJarScript = 'js/hotjar/hotjar.js';
+DocHead.loadScript(hotJarScript);
