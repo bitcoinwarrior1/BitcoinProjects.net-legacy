@@ -275,5 +275,13 @@ footer.white-text a, .filter-area a {
 }
 
 #details {
-  padding-top: 1.5em
+  padding-top: 1.5em;
+  .fa-home {
+    color: black;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 5px 6px;
+    background: white;
+    margin: 10px 0;
+  }
 }

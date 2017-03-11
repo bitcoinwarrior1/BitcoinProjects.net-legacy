@@ -8,7 +8,11 @@ class Details extends React.Component {
     const {dapp} = this.props;
     return (
       <div id="details" className="container">
+        <a href="/">
+          <i className="fa fa-home" aria-hidden="true"></i>
+        </a>
         <div className="row">
+
           <div className="col s8">
             <div className=" bg-white">
               <div className="title">
