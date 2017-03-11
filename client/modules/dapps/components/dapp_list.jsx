@@ -7,17 +7,16 @@ class DappList extends React.Component {
     super(props);
   }
 
+
   render() {
+    let {dapps} = this.props;
     return (
       <div className='row'>
         <FilterArea/>
         <section ref='dappSection' className='dapps row'>
-          <Dapp/> <Dapp/>
-          <Dapp/>
-          <Dapp/>
-          <Dapp/>
-          <Dapp/>
-
+          {dapps.map((dapp, index) => (
+            <Dapp key={index} dapp={dapp}/>
+          ))}
         </section>
       </div>
     );

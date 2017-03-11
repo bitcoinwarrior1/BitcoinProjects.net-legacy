@@ -6,11 +6,12 @@ class FilterArea extends React.Component {
   }
 
   render() {
+    let {dappCount} = this.props;
     return (
       <div>
         <div className='filter-area white-text'>
           <div className='col s5'>
-            2
+            {dappCount} dapps listed
           </div>
           <div className='col s7 right-align'>
             Sort: <a href='#'></a>
@@ -22,5 +23,7 @@ class FilterArea extends React.Component {
     );
   }
 }
-
+FilterArea.defaultProps = {
+  dappCount: 0
+};
 export default FilterArea;

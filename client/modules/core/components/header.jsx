@@ -1,7 +1,6 @@
 import React from "react";
 import InfoModal from "/client/modules/core/containers/info_modal";
 import SubmitModal from "/client/modules/core/containers/submit_modal";
-
 import SearchBox from "/client/modules/core/containers/search_box";
 
 class Header extends React.Component {
@@ -9,11 +8,15 @@ class Header extends React.Component {
     super(props);
   }
 
+  scrollToTop() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <div>
         <div className='scroll-to-top'>
-          <i className='fa fa-fw fa-arrow-up'></i>
+          <i className='fa fa-fw fa-arrow-up' onClick={this.scrollToTop.bind(this)}></i>
         </div>
         <div ref='navArea' className='header-container container'>
           <header className='center-align'>

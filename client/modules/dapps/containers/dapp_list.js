@@ -1,11 +1,15 @@
-import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
-
-import DappList from '../components/dapp_list.jsx';
+import {useDeps, composeAll, composeWithTracker, compose} from "mantra-core";
+import DappList from "../components/dapp_list.jsx";
 
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
+  const subscriptionReady = [Meteor.subscribe('dapps.list').ready()]
+  const dataReady = () => {
+    const dapps = Collections.Dapps.find().fetch();
+    onData(null, {dapps});
+  };
 
-  onData(null, {});
+  (subscriptionReady) ? dataReady() : onData();
 };
 
 export const depsMapper = (context, actions) => ({

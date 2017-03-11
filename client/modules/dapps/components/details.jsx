@@ -74,6 +74,6 @@ Details.defaultProps = {
     'PageMaker including versions of Lorem Ipsum.',
   }
 
-}
+};
 
 export default Details;
