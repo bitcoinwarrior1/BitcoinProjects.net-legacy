@@ -1,5 +1,4 @@
 import React from "react";
-
 class Dapp extends React.Component {
 
   constructor(props) {
