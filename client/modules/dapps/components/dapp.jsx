@@ -6,60 +6,76 @@ class Dapp extends React.Component {
     super(props);
   }
 
+  getStatusColor(status) {
+    let statusColors = [
+      'light-grey', // 0. Unknown
+      'black white-text', // 1. Abandoned
+      'red darken-2 white-text', // 2. On Hold
+      'grey darken-2 white-text', // 3. Stealth Mode
+      'amber accent-1', // 4. Concept
+      'amber', // 5. Work In Progress
+      'green accent-1', // 6. Demo
+      'green accent-2', // 7. Working Prototype
+      'light-green accent-3' // 8. live
+    ];
+    return statusColors[parseInt(status[0], 10)];
+  }
+
   render() {
     var statusColor = 10;
     var link = 'url';
+    let {dapp} = this.props;
     return (
       <div className='col ms12 m4 l3 xl2 xxl1'>
-        <div className={'card hoverable dapp-card ' + statusColor}>
+        <div className={'card hoverable dapp-card ' + this.getStatusColor(dapp.status)}>
           <div className='card-content'>
             <div className='main-section center-align'>
               <div className='card-title truncate'>
-                {link ? <a target='_blank' href={link}>{this.props.dapp.name}</a>
-                  : this.props.dapp.name}
+                {link ? <a target='_blank' href={link}>{dapp.name}</a>
+                  : dapp.name}
               </div>
               <div className='card-subtitle trunchate'>
 
               </div>
               <div className='card-description'>
-                <p>{this.props.dapp.description}</p>
+                <p>{dapp.description}</p>
               </div>
             </div>
             <div className='section status-section'>
               <p className='icon-row center-align'>
-                { this.props.dapp.url &&
-                <a target='_blank' href={this.props.dapp.url}>
+                { dapp.url &&
+                <a target='_blank' href={dapp.url}>
                   <i className='icon-link fa fa-fw fa-globe'></i>
                 </a>
                 }
-                { this.props.dapp.github &&
-                <a target='_blank' href={this.props.dapp.github}>
-                  {this.props.dapp.license}
+                { dapp.github &&
+                <a target='_blank' href={dapp.github}>
+                  {dapp.license}
                   <i className='icon-clickaBleIconlink fa fa-fw fa-github'></i>
                 </a>
                 }
-                { this.props.dapp.reddit &&
-                <a target='_blank' href={this.props.dapp.reddit}>
+                {dapp.reddit &&
+                <a target='_blank' href={dapp.reddit}>
                   <i className='icon-link fa fa-fw fa-reddit'></i>
                 </a>
                 }
-                { this.props.dapp.contract_address_mainnet &&
-                <a target='_blank' href={'https://etherscan.io/address/' + this.props.dapp.contract_address_mainnet}>
+                { dapp.contract_address_mainnet &&
+                <a target='_blank' href={'https://etherscan.io/address/' + dapp.contract_address_mainnet}>
                   <i className='icon-link fa fa-fw fa-cogs'></i>
                 </a>
                 }
-                { this.props.dapp.contract_address_ropsten &&
-                <a target='_blank' href={'https://ropsten.io/address/' + this.props.dapp.contract_address_ropsten}>
+                { dapp.contract_address_ropsten &&
+                <a target='_blank' href={'https://ropsten.io/address/' + dapp.contract_address_ropsten}>
                   <i className='icon-link fa fa-fw fa-bug'></i>
                 </a>
 
                 }
               </p>
               <p className='pull-right'>
-                {this.props.dapp.last_update}
+                {dapp.last_update}
               </p>
               <p className='status truncate'>
-                {this.props.dapp.status.substring(3)}
+                {dapp.status.substring(3)}
               </p>
             </div>
           </div>
@@ -77,7 +93,7 @@ Dapp.defaultProps = {
     description: 'description',
     url: 'url',
     github: 'github',
-    status: '123132',
+    status: '6. Demo',
     last_update: '2012',
     reddit: 'reddit',
   }

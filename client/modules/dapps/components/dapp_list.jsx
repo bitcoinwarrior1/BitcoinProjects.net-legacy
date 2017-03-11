@@ -14,9 +14,17 @@ class DappList extends React.Component {
       <div className='row'>
         <FilterArea/>
         <section ref='dappSection' className='dapps row'>
-          {dapps.map((dapp, index) => (
-            <Dapp key={index} dapp={dapp}/>
-          ))}
+          {console.log(dapps)}
+          {
+            (dapps) ?
+              dapps.map((dapp, index) => (
+                <Dapp key={index} dapp={dapp}/>
+              ))
+              :
+              <div className='no-results center-align white-text flow-text section'>
+                <p>No Dapps Found</p>
+              </div>
+          }
         </section>
       </div>
     );
