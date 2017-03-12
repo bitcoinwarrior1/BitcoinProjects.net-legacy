@@ -1,5 +1,6 @@
 import React from "react";
-import IconButton from "../containers/icon_button";
+import IconButtons from "../containers/icon_buttions";
+
 class SearchBox extends React.Component {
   constructor(props) {
     super(props);
@@ -20,17 +21,9 @@ class SearchBox extends React.Component {
             <input ref='searchBox' onKeyUp={this.handleKeyUp.bind(this)} type='text' className='search-box'></input>
             <label>Search</label>
           </div>
-
-
+          <IconButtons/>
         </div>
-        <div className="pull-right">
-          <IconButton style={{paddingLeft: '0px', fontSize: '30px'}} customClass="fa fa-info-circle fa-2"
-                      target="infoModal"/>
 
-          <IconButton style={{paddingLeft: '5px', fontSize: '30px'}}
-                      customClass="fa fa-fw fa-plus-circle info-button"
-                      target="submitModal"/>
-        </div>
       </div>
     );
   }
