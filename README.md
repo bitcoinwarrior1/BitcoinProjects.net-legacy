@@ -11,9 +11,10 @@ This is a service provided by [EtherCasts](http://ethercasts.com)
 ### Meteor web application
 
 Ensure you have [Meteor](https://www.meteor.com/install) installed.
-
+### Application architecture has been upgraded to [Mantra-Spec](https://kadirahq.github.io/mantra/)
 To run the app:
 
+    $ meteor npm i
     $ meteor
 
 Open your web browser and go to [http://localhost:3000](http://localhost:3000) to see the app running.
