@@ -42,6 +42,7 @@ jquery@1.11.10
 jsx@0.2.4
 kadira:dochead@1.5.0
 kadira:flow-router@2.12.1
+kevohagan:sweetalert@1.0.0
 lai:collection-extensions@0.1.4
 launch-screen@1.1.1
 livedata@1.0.18

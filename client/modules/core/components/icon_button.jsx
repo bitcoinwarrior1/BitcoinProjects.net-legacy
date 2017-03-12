@@ -12,7 +12,6 @@ class IconButton extends React.Component {
 
   render() {
     let {style, customClass, target} = this.props;
-
     return (
       <i ref='iconButton' style={style}
          className={`${customClass} iconButton`}

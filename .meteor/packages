@@ -6,35 +6,38 @@
 
 meteor-base@1.0.4             # Packages every Meteor app needs to have
 mobile-experience@1.0.4       # Packages for a great mobile UX
-mongo@1.1.15                   # The database Meteor supports right now
-blaze-html-templates@1.0.4 # Compile .html files into Meteor Blaze views
-reactive-var@1.0.11            # Reactive variable for tracker
-jquery@1.11.10                  # Helpful client-side library
+mongo@1.1.15                  # The database Meteor supports right now
+blaze-html-templates@1.0.4    # Compile .html files into Meteor Blaze views
+reactive-var@1.0.11           # Reactive variable for tracker
+jquery@1.11.10                # Helpful client-side library
 tracker@1.1.2                 # Meteor's client-side reactive programming librarylogging@1.1.17
 
 standard-minifier-css@1.3.3   # CSS minifier run for production mode
 standard-minifier-js@1.2.2    # JS minifier run for production mode
-es5-shim@4.6.15                # ECMAScript 5 compatibility for older browsers.
+es5-shim@4.6.15               # ECMAScript 5 compatibility for older browsers.
 ecmascript@0.6.3              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.2.2            # Server-side component of the `meteor shell` command
 
-reload@1.1.11
-random@1.0.10
-ejson@1.0.13
-spacebars
-check@1.2.4
-email@1.1.18
-react@=0.1.12
-materialize:materialize
-fourseven:scss
-fortawesome:fontawesome
-fastclick@1.0.13
-kadira:dochead                  # DocHead is an isomorphic way to manipulate document.head for Meteor apps.
+reload@1.1.11                 # Reload the page while preserving application state.
+random@1.0.10                 # Random number generator and utilities
+ejson@1.0.13                  # Extended and Extensible JSON library
+spacebars                     # Handlebars-like template language for Meteor
+check@1.2.4                   # Check whether a value matches a pattern
+email@1.1.18                  # Send email messages
+react@=0.1.12                 # React rendering framework
+materialize:materialize       # Materialize (official): A modern responsive front-end framework based on Material Design
+fortawesome:fontawesome       # Font Awesome (official): 500+ scalable vector icons, customizable via CSS, Retina friendly
+fastclick@1.0.13              # Faster touch events on mobile
+kadira:dochead                # DocHead is an isomorphic way to manipulate document.head for Meteor apps.
+kevohagan:sweetalert          # A responsive, themable, cross-browser replacement for JavaScript's alert() with beautiful dialog prompts.
 
-kadira:flow-router
-reactive-dict
-
+kadira:flow-router            # Carefully Designed Client Side Router for Meteor
+reactive-dict                 # Reactive dictionary
+okgrow:analytics              # Complete Google Analytics, Mixpanel, KISSmetrics (and more) integration for Meteor
+simple:rest                   # The easiest way to add a REST API to your Meteor app
 # dev only
-meteortoys:allthings
-simple:rest
-okgrow:analytics
+meteortoys:allthings          # Insanely Handy Development Tools
+fourseven:scss                # Style with attitude. Sass and SCSS support for Meteor.js.
+
+
+

@@ -5,6 +5,21 @@ class SubmitModal extends React.Component {
     super(props);
   }
 
+  submitQueue() {
+    const {create} = this.props;
+    let $thisForm = $(this.refs.submissionForm);
+    const getFormData = () => {
+      let dataObj = {};
+      $thisForm.serializeArray().forEach((item, i) => {
+        dataObj[item.name] = item.value;
+      });
+      return dataObj;
+    };
+    let res = create(this.refs.antiSpam.value, getFormData(), $thisForm);
+    console.log(res);
+
+  }
+
   render() {
     return (
       <div id='submitModal' className='modal'>
@@ -15,7 +30,7 @@ class SubmitModal extends React.Component {
               Complete the form below or email <a href='mailto:dapps@ethercasts.com' target='_blank'>dapps@ethercasts.com</a>
             </p>
           </div>
-          <form ref='submissionForm' onSubmit={this.handleSubmit}>
+          <form ref='submissionForm'>
             <div className='row slim-row'>
               <div className='input-field col s12 m6'>
                 <input className='validate' name='dapp_name' type='text' required maxLength='32'/>
@@ -94,7 +109,10 @@ class SubmitModal extends React.Component {
             <div className='row center-align slim-row'>
               <a href='#' className='modal-action modal-close waves-effect waves-green btn-flat'>Cancel</a>
               &nbsp;&nbsp;
-              <button type='submit' className='waves-effect waves-blue btn light-blue'>Submit</button>
+              <button type='button'
+                      className='waves-effect waves-blue btn light-blue'
+                      onClick={this.submitQueue.bind(this)}>Submit
+              </button>
             </div>
           </form>
         </div>
