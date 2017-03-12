@@ -5,7 +5,6 @@ const Layout = ({content = () => null}) => (
   <div>
     <Header/>
     <div className='black'>
-
       {content()}
       <Footer/>
     </div>

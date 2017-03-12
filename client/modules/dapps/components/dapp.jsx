@@ -34,7 +34,7 @@ class Dapp extends React.Component {
                   : dapp.name}
               </div>
               <div className='card-subtitle trunchate'>
-
+                {dapp.contact}
               </div>
               <div className='card-description'>
                 <p>{dapp.description}</p>
@@ -95,6 +95,7 @@ Dapp.defaultProps = {
     status: '6. Demo',
     last_update: '2012',
     reddit: 'reddit',
+    contact: ''
   }
 };
 export default Dapp;

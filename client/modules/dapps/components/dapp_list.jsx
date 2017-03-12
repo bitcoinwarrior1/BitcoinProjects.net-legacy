@@ -1,6 +1,5 @@
 import React from "react";
 import Dapp from "../containers/dapp";
-import FilterArea from "/client/modules/core/containers/filter_area";
 
 class DappList extends React.Component {
   constructor(props) {
@@ -11,10 +10,7 @@ class DappList extends React.Component {
   render() {
     let {dapps} = this.props;
     return (
-      <div className='row'>
-        <FilterArea/>
         <section ref='dappSection' className='dapps row'>
-          {console.log(dapps)}
           {
             (dapps) ?
               dapps.map((dapp, index) => (
@@ -26,7 +22,6 @@ class DappList extends React.Component {
               </div>
           }
         </section>
-      </div>
     );
   }
 }

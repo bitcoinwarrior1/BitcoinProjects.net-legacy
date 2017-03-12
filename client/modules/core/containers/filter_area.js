@@ -1,6 +1,5 @@
 import {useDeps, composeAll, composeWithTracker, compose} from "mantra-core";
 import FilterArea from "../components/filter_area.jsx";
-
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
   const subscriptionReady = [Meteor.subscribe('dapps.list').ready()]
