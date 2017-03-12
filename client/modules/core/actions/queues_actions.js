@@ -25,6 +25,7 @@ export default {
       if (!queue.contact_email) {
         errors.push('Email');
       }
+
       if (!queue.site) {
         errors.push('Site URL');
       }
