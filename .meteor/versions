@@ -6,14 +6,13 @@ babel-runtime@1.0.1
 base64@1.0.10
 binary-heap@1.0.10
 blaze@2.1.8
-blaze-html-templates@1.0.1
+blaze-html-templates@1.0.4
 blaze-tools@1.0.9
 boilerplate-generator@1.0.11
 caching-compiler@1.1.9
 caching-html-compiler@1.0.6
 callback-hook@1.0.10
 check@1.2.4
-chuangbo:cookie@1.1.0
 coffeescript@1.0.11
 cosmos:browserify@0.5.1
 dburles:mongo-collection-instances@0.3.4
@@ -28,6 +27,7 @@ ecmascript@0.6.3
 ecmascript-runtime@0.3.15
 ejson@1.0.13
 email@1.1.18
+es5-shim@4.6.15
 fastclick@1.0.13
 fortawesome:fontawesome@4.7.0
 fourseven:scss@3.4.1
@@ -40,8 +40,9 @@ http@1.2.11
 id-map@1.0.9
 jquery@1.11.10
 jsx@0.2.4
-kadira:flow-router-ssr@3.6.0
-kadira:react-layout@1.4.1
+kadira:dochead@1.5.0
+kadira:flow-router@2.12.1
+kevohagan:sweetalert@1.0.0
 lai:collection-extensions@0.1.4
 launch-screen@1.1.1
 livedata@1.0.18
@@ -50,9 +51,6 @@ logging@1.1.17
 materialize:materialize@0.97.3
 meteor@1.6.1
 meteor-base@1.0.4
-meteorhacks:fast-render@2.10.0
-meteorhacks:inject-data@1.4.1
-meteorhacks:picker@1.0.3
 meteortoys:allthings@2.2.0
 meteortoys:authenticate@2.1.0
 meteortoys:autopub@2.1.0

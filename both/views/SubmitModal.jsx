@@ -1,3 +1,4 @@
+/*
 App.SubmitModal = React.createClass({
 
   handleSubmit (e) {
@@ -127,3 +128,4 @@ App.SubmitModal = React.createClass({
   }
 
 })
+*/

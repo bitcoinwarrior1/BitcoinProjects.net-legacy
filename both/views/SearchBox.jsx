@@ -1,4 +1,5 @@
 /* globals Session */
+/*
 App.SearchBox = React.createClass({
   handleKeyup: _.debounce(function () {
     Session.set('lastResult', App.initialBatchSize)
@@ -29,3 +30,4 @@ App.SearchBox = React.createClass({
   }
 
 });
+*/

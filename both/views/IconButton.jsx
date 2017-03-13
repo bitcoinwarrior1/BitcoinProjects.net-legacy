@@ -1,3 +1,4 @@
+/*
 App.IconButton = React.createClass({
   handleClick(){
     let {target} = this.props;
@@ -23,3 +24,4 @@ App.IconButton = React.createClass({
   }
 })
 ;
+*/

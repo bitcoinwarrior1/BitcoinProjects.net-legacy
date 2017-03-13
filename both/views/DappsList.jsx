@@ -1,4 +1,5 @@
-/* globals Session, ReactMeteorData */
+/*
+/!* globals Session, ReactMeteorData *!/
 
 App.initialBatchSize = 48
 App.defaultSortDirection = -1 // descending sort by default
@@ -160,3 +161,4 @@ App.DappsList = React.createClass({
   }
 })
 
+*/
