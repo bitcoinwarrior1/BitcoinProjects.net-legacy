@@ -10,7 +10,7 @@ Meteor.methods({
     })
 
     check(data, {
-      dapp_name: ShortString,
+      project_name: ShortString,
       description: ShortString,
       contact: ShortString,
       contact_email: ShortString,
@@ -33,7 +33,7 @@ Meteor.methods({
         to: process.env.MAIL_TO,
         from: process.env.MAIL_FROM,
         replyTo: data.contact_email,
-        subject: `New Dapp Submitted - ${data.dapp_name}`,
+        subject: `New Dapp Submitted - ${data.project_name}`,
         text: `Dapp needs to be approved and added manually:\n\n ${EJSON.stringify(data, null, 2)}`
       })
     }

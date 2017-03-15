@@ -1,6 +1,3 @@
-# State of the DApps
-
-Lists of all Ethereum DApps known to mankind. Watch our presentation https://youtu.be/iqBNPh5IMqM
 
 Authorative source: https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/edit?usp=sharing
 

@@ -36,13 +36,13 @@ App.SubmitModal = React.createClass({
           <div className='row slim-row center-align'>
             <h4>Submit a Dapp</h4>
             <p>
-              Complete the form below or email <a href='mailto:dapps@ethercasts.com' target='_blank'>dapps@ethercasts.com</a>
+              Complete the form below or email <a href='mailto:bitcoinsetupnz@gmail.com' target='_blank'>bitcoinsetupnz@gmail.com</a>
             </p>
           </div>
           <form ref='submissionForm' onSubmit={this.handleSubmit}>
             <div className='row slim-row'>
               <div className='input-field col s12 m6'>
-                <input className='validate' name='dapp_name' type='text' required maxLength='32'/>
+                <input className='validate' name='project_name' type='text' required maxLength='32'/>
                 <label>Dapp Name *</label>
               </div>
               <div className='input-field col s12 m6'>

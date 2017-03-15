@@ -55,18 +55,18 @@ def import_queue(db):
 
 def update_sheet(worksheet, db, data):
     for row in data:
-        dapp_name = row['dapp_name']
+        project_name = row['project_name']
         dt = parser.parse(row['timestamp'])
         timestamp = dt.strftime('%Y-%m-%d')
         print row['timestamp'], dt, timestamp
-        db_entry = db.dapps.find_one({'name': re.compile('^' + re.escape(dapp_name) + '$', re.IGNORECASE)})
+        db_entry = db.dapps.find_one({'name': re.compile('^' + re.escape(project_name) + '$', re.IGNORECASE)})
         if db_entry:
-            print 'Existing', row['dapp_name'], db_entry['row_nr']
+            print 'Existing', row['project_name'], db_entry['row_nr']
             print worksheet.row_values(db_entry['row_nr'] + 1)
         else:
-            print 'New', row['dapp_name']
+            print 'New', row['project_name']
             output = [
-                row['dapp_name'],
+                row['project_name'],
                 row['description'],
                 row['site'],
                 row['github'],

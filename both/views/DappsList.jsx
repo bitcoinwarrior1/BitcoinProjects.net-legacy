@@ -123,7 +123,7 @@ App.DappsList = React.createClass({
         </div>
         <div ref='navArea' className='header-container container'>
           <header className='center-align'>
-            <h1>State of the Ðapps</h1>
+            <h1>State of the Bits</h1>
           </header>
           <section>
             < App.SearchBox />
@@ -159,4 +159,3 @@ App.DappsList = React.createClass({
     )
   }
 })
-
