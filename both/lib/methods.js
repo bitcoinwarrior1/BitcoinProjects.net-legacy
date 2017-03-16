@@ -33,8 +33,8 @@ Meteor.methods({
         to: process.env.MAIL_TO,
         from: process.env.MAIL_FROM,
         replyTo: data.contact_email,
-        subject: `New Dapp Submitted - ${data.project_name}`,
-        text: `Dapp needs to be approved and added manually:\n\n ${EJSON.stringify(data, null, 2)}`
+        subject: `New Bitcoin Project Submitted - ${data.project_name}`,
+        text: `The project needs to be approved and added manually:\n\n ${EJSON.stringify(data, null, 2)}`
       })
     }
   }
