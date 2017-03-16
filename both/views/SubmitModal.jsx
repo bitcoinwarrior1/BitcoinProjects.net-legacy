@@ -34,7 +34,7 @@ App.SubmitModal = React.createClass({
       <div id='submitModal' className='modal'>
         <div className='modal-content'>
           <div className='row slim-row center-align'>
-            <h4>Submit a Dapp</h4>
+            <h4>Submit your Bitcoin project</h4>
             <p>
               Complete the form below or email <a href='mailto:bitcoinsetupnz@gmail.com' target='_blank'>bitcoinsetupnz@gmail.com</a>
             </p>
@@ -43,11 +43,11 @@ App.SubmitModal = React.createClass({
             <div className='row slim-row'>
               <div className='input-field col s12 m6'>
                 <input className='validate' name='project_name' type='text' required maxLength='32'/>
-                <label>Dapp Name *</label>
+                <label>Project Name *</label>
               </div>
               <div className='input-field col s12 m6'>
                 <input className='validate' name='description' type='text' required maxLength='64'/>
-                <label>Dapp Description *</label>
+                <label>Project Description *</label>
               </div>
             </div>
             <div className='row slim-row'>
@@ -78,16 +78,6 @@ App.SubmitModal = React.createClass({
               <div className='input-field col s12 m6'>
                 <input name='license' type='text' required maxLength='10'/>
                 <label>License *</label>
-              </div>
-            </div>
-            <div className='row slim-row'>
-              <div className='input-field col s12 m6'>
-                <input name='contract_address_mainnet' type='text' pattern="(0x)?[0-9a-fA-F]{40}" maxLength='42'/>
-                <label>Mainnet contract address</label>
-              </div>
-              <div className='input-field col s12 m6'>
-                <input name='contract_address_ropsten' type='text' pattern="(0x)?[0-9a-fA-F]{40}" maxLength='42'/>
-                <label>Ropsten contract address</label>
               </div>
             </div>
             <div className='row slim-row'>
