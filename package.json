@@ -10,5 +10,25 @@
   },
   "dependencies": {
     "babel-runtime": "^6.23.0"
-  }
+  },
+  "name": "State-of-the-bits",
+  "description": "Authorative source: https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/edit?usp=sharing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "meteor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/James-Sangalli/State-of-the-bits.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/James-Sangalli/State-of-the-bits/issues"
+  },
+  "homepage": "https://github.com/James-Sangalli/State-of-the-bits#readme"
 }
