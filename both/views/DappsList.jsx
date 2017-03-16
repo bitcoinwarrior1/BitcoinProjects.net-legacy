@@ -101,7 +101,7 @@ App.DappsList = React.createClass({
 
   renderDapps () {
     if (this.data.dapps.length) {
-      return this.data.dapps.map(dapp => {
+      return this.data.dapps.map(function(dapp) {
         return <App.Dapp
           key={dapp._id}
           dapp={dapp}/>

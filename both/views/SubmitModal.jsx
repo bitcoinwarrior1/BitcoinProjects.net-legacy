@@ -7,10 +7,10 @@ App.SubmitModal = React.createClass({
     } else {
       var dataObj = {}
       var $thisForm = $(this.refs.submissionForm.getDOMNode())
-      $thisForm.serializeArray().forEach((item, i) => {
+      $thisForm.serializeArray().forEach(function(item, i) {
         dataObj[item.name] = item.value
       })
-      Meteor.call('newSubmission', dataObj, (err) => {
+      Meteor.call('newSubmission', dataObj, function(err) {
         if (err) {
           window.alert(err)
         } else {

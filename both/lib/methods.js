@@ -20,8 +20,8 @@ Meteor.methods({
       license: ShortString,
       tags: ShortString,
       status: ShortString,
-      contract_address_mainnet: ShortString,
-      contract_address_ropsten: ShortString,
+      // contract_address_mainnet: ShortString,
+      // contract_address_ropsten: ShortString,
     })
 
     data.timestamp = new Date().toLocaleString()
