@@ -9,8 +9,8 @@
     ]
   },
   "dependencies": {
-    "babel-runtime": "^6.23.0",
     "babel-cli": "^6.0.0",
+    "babel-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.0.0"
   },
   "name": "State-of-the-bits",
