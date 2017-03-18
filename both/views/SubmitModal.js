@@ -39,10 +39,9 @@ App.SubmitModal = React.createClass({
               Email <a href='mailto:bitcoinsetupnz@gmail.com?subject=Bitcoin Project Submission&body=Please include your Project Name, Project Description, Organisation name, Website URL, Github URL, Software License (e.g. MIT) and Status: Abandoned, on hold, Stealth mode, Concept, Work in progress, Demo, Working Prototype or Live'
               target='_blank'>bitcoinsetupnz@gmail.com</a>
             </p>
-              <p>with the following information: </p>
-              <p><strong>Your Project Name, Project Description, Organisation name, Website URL, Github URL,
-              Software License (e.g. MIT) and Status </strong>:
-              </p>
+              <p>with the following information: <strong>Your Project Name, Project Description, Organisation name, Website URL, Github URL,
+              Software License (e.g. MIT) and Status </strong>:</p>
+        
               <p>1. Abandoned </p>
               <p>2. On Hold </p>
               <p>3. Stealth Mode </p>
