@@ -1,7 +1,7 @@
 
 Authorative source: https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/edit?usp=sharing
 
-This is a service provided by [EtherCasts](http://ethercasts.com)
+This repo is a fork from [EtherCasts](http://ethercasts.com)
 
 ## Development
 
