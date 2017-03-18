@@ -18,7 +18,7 @@ spacebars
 check@1.2.4
 mobile-experience@1.0.4
 email@1.1.18
-ecmascript@0.6.3
+ecmascript
 react@=0.1.12
 materialize:materialize
 kadira:flow-router-ssr
@@ -34,3 +34,4 @@ okgrow:analytics
 standard-minifier-css
 standard-minifier-js
 shell-server
+es5-shim
