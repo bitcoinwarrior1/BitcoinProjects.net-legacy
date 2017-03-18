@@ -36,83 +36,25 @@ App.SubmitModal = React.createClass({
           <div className='row slim-row center-align'>
             <h4>Submit your Bitcoin project</h4>
             <p>
-              Complete the form below or email <a href='mailto:bitcoinsetupnz@gmail.com' target='_blank'>bitcoinsetupnz@gmail.com</a>
+              Email <a href='mailto:bitcoinsetupnz@gmail.com?subject=Bitcoin Project Submission&body=Please include your Project Name, Project Description, Organisation name, Website URL, Github URL, Software License (e.g. MIT) and Status: Abandoned, on hold, Stealth mode, Concept, Work in progress, Demo, Working Prototype or Live'
+              target='_blank'>bitcoinsetupnz@gmail.com</a>
             </p>
-          </div>
-          <form ref='submissionForm' onSubmit={this.handleSubmit}>
-            <div className='row slim-row'>
-              <div className='input-field col s12 m6'>
-                <input className='validate' name='project_name' type='text' required maxLength='32'/>
-                <label>Project Name *</label>
-              </div>
-              <div className='input-field col s12 m6'>
-                <input className='validate' name='description' type='text' required maxLength='64'/>
-                <label>Project Description *</label>
-              </div>
-            </div>
-            <div className='row slim-row'>
-              <div className='input-field col s12 m6'>
-                <input className='validate' name='contact' type='text' required maxLength='32'/>
-                <label>Organisation / Contact Name *</label>
-              </div>
-              <div className='input-field col s12 m6'>
-                <input className='validate' name='contact_email' type='email' required maxLength='32'/>
-                <label>Contact Email (not shown publicly) *</label>
-              </div>
-            </div>
-            <div className='row slim-row'>
-              <div className='input-field col s12 m6'>
-                <input name='site' type='url' pattern="https?://.+" required maxLength='64'/>
-                <label>Site URL *</label>
-              </div>
-              <div className='input-field col s12 m6'>
-                <input name='reddit' type='url' pattern="https?://.+" maxLength='128'/>
-                <label>Reddit URL</label>
-              </div>
-            </div>
-            <div className='row slim-row'>
-              <div className='input-field col s12 m6'>
-                <input name='github' type='url' pattern="https?://.+" maxLength='64'/>
-                <label>GitHub URL</label>
-              </div>
-              <div className='input-field col s12 m6'>
-                <input name='license' type='text' required maxLength='10'/>
-                <label>License *</label>
-              </div>
-            </div>
-            <div className='row slim-row'>
-              <div className='input-field col s12'>
-                <input name='tags' type='text' maxLength='128'/>
-                <label>Tags (comma separated)</label>
-              </div>
-            </div>
-            <div className='row'>
-              <div className='input-field col s12 m6'>
-                <select className='browser-default validate' required name='status'>
-                  <option value='' defaultValue>Project Status</option>
-                  <option value='1. Abandoned'>Abandoned</option>
-                  <option value='2. On Hold'>On Hold</option>
-                  <option value='3. Stealth Mode'>Stealth Mode</option>
-                  <option value='4. Concept'>Concept</option>
-                  <option value='5. Work In Progress'>Work In Progress</option>
-                  <option value='6. Demo'>Demo</option>
-                  <option value='7. Working Prototype'>Working Prototype</option>
-                  <option value='8. Live'>Live</option>
-                </select>
-              </div>
-              <div className='input-field col s12 m6'>
-                <input ref='antiSpam' className='anti-spam validate' required type='text' maxLength='3'/>
-                <label>Anti Spam: 40 + 2 = ?</label>
-              </div>
-            </div>
-            <div className='row center-align slim-row'>
-              <a href='#' className='modal-action modal-close waves-effect waves-green btn-flat'>Cancel</a>
-              &nbsp;&nbsp;
-              <button type='submit' className='waves-effect waves-blue btn light-blue'>Submit</button>
-            </div>
-          </form>
+              <p>with the following information: </p>
+              <p><strong>Your Project Name, Project Description, Organisation name, Website URL, Github URL,
+              Software License (e.g. MIT) and Status </strong>:
+              </p>
+              <p>1. Abandoned </p>
+              <p>2. On Hold </p>
+              <p>3. Stealth Mode </p>
+              <p>4. Concept </p>
+              <p>5. Work In Progress </p>
+              <p>6. Demo </p>
+              <p>7. Working Prototype </p>
+              <p>8. Live </p>
+
         </div>
       </div>
+    </div>
     )
   }
 

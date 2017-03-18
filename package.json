@@ -14,10 +14,12 @@
   "name": "State-of-the-bits",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-preset-meteor": "^6.24.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "meteor"
+    "start": "meteor"
   },
   "repository": {
     "type": "git",
