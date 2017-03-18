@@ -5,7 +5,7 @@ This repo is a fork from [EtherCasts](http://ethercasts.com)
 
 ## Development
 
-### Meteor web application
+### Meteor Web Application
 
 Ensure you have [Meteor](https://www.meteor.com/install) installed.
 
