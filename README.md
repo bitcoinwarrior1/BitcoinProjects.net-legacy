@@ -1,5 +1,6 @@
 
-Authorative source: https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/edit?usp=sharing
+Project list: 
+https://docs.google.com/spreadsheets/d/1mabXCaQwt8pxq45xsqosEAUqZ-F6csD3r771DxE9fJE/edit#gid=0
 
 This repo is a fork from [EtherCasts](http://ethercasts.com)
 
