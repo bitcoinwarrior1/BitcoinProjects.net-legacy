@@ -10,7 +10,7 @@ from pymongo import MongoClient
 import re
 from dateutil import parser
 
-DAPPS_SHEET_KEY = '1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g'
+DAPPS_SHEET_KEY = '1mabXCaQwt8pxq45xsqosEAUqZ-F6csD3r771DxE9fJE'
 MONGODB_URL = os.getenv('MONGODB_URL', 'mongodb://127.0.0.1:3001/meteor')
 
 def sync_sheet(worksheet, db):
@@ -22,7 +22,7 @@ def sync_sheet(worksheet, db):
         print(cell_list)
 
         if row_nr > 0:
-            name, description, url, github, reddit, contact, tags, license, platform, status, last_update, contract_address_mainnet, contract_address_ropsten, icon = cell_list
+            name, description, url, github, reddit, contact, tags, license, platform, status, last_update, icon = cell_list
             tags = [tag.strip() for tag in tags.split(',')]
             db.dapps.update({'name': name}, {'$set': {
                 'row_nr': row_nr,
@@ -36,9 +36,7 @@ def sync_sheet(worksheet, db):
                 'platform': platform,
                 'status': status,
                 'last_update': last_update,
-                'contract_address_mainnet': contract_address_mainnet,
-                'contract_address_ropsten': contract_address_ropsten,
-                'icon': icon,
+                'icon': icon
                 }}, upsert=True)
 
         row_nr += 1
@@ -76,9 +74,7 @@ def update_sheet(worksheet, db, data):
                 row['license'],
                 'Ethereum',
                 row['status'],
-                timestamp,
-                row['contract_address_mainnet'],
-                row['contract_address_ropsten'],
+                timestamp
             ]
             worksheet.append_row(output)
 
