@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
+import argparse
 import codecs
-from datetime import datetime
 import gspread
 import json
 from oauth2client.client import GoogleCredentials
 import os
 from pymongo import MongoClient
 import re
-from dateutil import parser
+import dateutil
 
 DAPPS_SHEET_KEY = '1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g'
 MONGODB_URL = os.getenv('MONGODB_URL', 'mongodb://127.0.0.1:3001/meteor')
@@ -62,7 +62,7 @@ def import_queue(db):
 def update_sheet(worksheet, db, data):
     for row in data:
         dapp_name = row['dapp_name']
-        dt = parser.parse(row['timestamp'])
+        dt = dateutil.parser.parse(row['timestamp'])
         timestamp = dt.strftime('%Y-%m-%d')
         print row['timestamp'], dt, timestamp
         db_entry = db.dapps.find_one({'name': re.compile('^' + re.escape(dapp_name) + '$', re.IGNORECASE)})
@@ -88,7 +88,17 @@ def update_sheet(worksheet, db, data):
             ]
             worksheet.append_row(output)
 
+
+def parse_cli_args():
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('--import', action='store_true', dest='import_queue', help='import submission queue to worksheet')
+    group.add_argument('--sync', action='store_true', help='sync worksheet to database')
+    return parser.parse_args()
+
 def main():
+    args = parse_cli_args()
+
     credentials = GoogleCredentials.get_application_default()
     credentials = credentials.create_scoped(['https://spreadsheets.google.com/feeds'])
     gc = gspread.authorize(credentials)
@@ -100,10 +110,14 @@ def main():
     db = client.get_default_database()
     db.dapps.ensure_index('name')
 
-    # data = import_queue(db)
-    # update_sheet(worksheet, db, data)
-    sync_sheet(worksheet, db)
+    if args.import_queue:
+        print "import queue"
+        data = import_queue(db)
+        update_sheet(worksheet, db, data)
+
+    if args.sync:
+        print "sync"
+        sync_sheet(worksheet, db)
 
 if __name__ == '__main__':
-    print("starting sync")
     main()
