@@ -8,7 +8,7 @@ from oauth2client.client import GoogleCredentials
 import os
 from pymongo import MongoClient
 import re
-import dateutil
+import dateutil.parser
 
 DAPPS_SHEET_KEY = '1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g'
 MONGODB_URL = os.getenv('MONGODB_URL', 'mongodb://127.0.0.1:3001/meteor')
