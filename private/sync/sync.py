@@ -24,7 +24,8 @@ def sync_sheet(worksheet, db):
         if row_nr > 0:
             name, description, url, github, reddit, contact, tags, license, platform, status, last_update, contract_address_mainnet, contract_address_ropsten, icon = cell_list
             tags = [tag.strip() for tag in tags.split(',')]
-            db.dapps.update({'name': name}, {'$set': {
+
+            attributes = {
                 'row_nr': row_nr,
                 'description': description,
                 'url': url,
@@ -39,7 +40,12 @@ def sync_sheet(worksheet, db):
                 'contract_address_mainnet': contract_address_mainnet,
                 'contract_address_ropsten': contract_address_ropsten,
                 'icon': icon,
-                }}, upsert=True)
+            }
+
+            if 'featured' in tags:
+                attributes['featured'] = True
+
+            db.dapps.update({'name': name}, {'$set': attributes}, upsert=True)
 
         row_nr += 1
 
