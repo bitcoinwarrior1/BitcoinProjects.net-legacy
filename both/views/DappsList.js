@@ -2,7 +2,7 @@
 
 App.initialBatchSize = 48
 App.defaultSortDirection = -1 // descending sort by default
-App.defaultSortType = 'last_update'
+App.defaultSortType = 'row_nr'//'last_update'
 
 var chunkSize = 24 // must be % 12 == 0, how many blocks are added
 var blocksInAdvance = 6 // if the browser is this close to the bottom we will load more
@@ -53,6 +53,8 @@ App.DappsList = React.createClass({
         }
       }
     }
+    //TODO remove hardcode here
+    //let overrideSort = '{"row_nr":-1}' //in descending order
     data.dapps = App.cols.Dapps.find(query, {sort: sort, limit: limit}).fetch()
     data.count = App.cols.Dapps.find(query).count()
     data.resultType = searchQuery.length > 0 ? 'found' : 'listed'

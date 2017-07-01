@@ -72,7 +72,7 @@ def update_sheet(worksheet, db, data):
                 row['contact'],
                 row['tags'],
                 row['license'],
-                'Ethereum',
+                'Bitcoin',
                 row['status'],
                 timestamp
             ]
