@@ -1,10 +1,10 @@
 /* globals Session */
 
-var sortTypes = ['last_update', 'status']
+let sortTypes = ['last_update', 'status']
 
-var sortNames = {
-  last_update: 'Updated',
-  status: 'Status'
+let sortNames = {
+  last_update: 'Descending',
+  status: 'Ascending'
 }
 
 App.FilterArea = React.createClass({
@@ -14,29 +14,29 @@ App.FilterArea = React.createClass({
 
   handleToggleDirection (e) {
     e.preventDefault()
-    var newSort = Session.get('searchSortDirection') === 1 ? -1 : 1
+    let newSort = Session.get('searchSortDirection') === 1 ? -1 : 1
     Session.set('searchSortDirection', newSort)
   },
 
   handleToggleType (e) {
     e.preventDefault()
-    var currentType = Session.get('searchSortType')
-    var currentIndex = sortTypes.indexOf(currentType)
-    var nextIndex = currentIndex + 1
+    let currentType = Session.get('searchSortType')
+    let currentIndex = sortTypes.indexOf(currentType)
+    let nextIndex = currentIndex + 1
     if (nextIndex >= sortTypes.length) {
       nextIndex = 0
     }
-    var newSortType = sortTypes[nextIndex]
+    let newSortType = sortTypes[nextIndex]
     Session.set('searchSortType', newSortType)
   },
 
   sortDirection () {
-    var sorter = typeof Session !== 'undefined' ? Session.get('searchSortDirection') : App.defaultSortDirection
+    let sorter = typeof Session !== 'undefined' ? Session.get('searchSortDirection') : App.defaultSortDirection
     return sorter === 1 ? 'asc' : 'desc'
   },
 
   sortType () {
-    var sorter = typeof Session !== 'undefined' ? Session.get('searchSortType') : App.defaultSortType
+    let sorter = typeof Session !== 'undefined' ? Session.get('searchSortType') : App.defaultSortType
     return sortNames[sorter]
   },
 

@@ -5,8 +5,8 @@ App.SubmitModal = React.createClass({
     if (this.refs.antiSpam.getDOMNode().value !== '42') {
       window.alert('You failed the spam filter test.')
     } else {
-      var dataObj = {}
-      var $thisForm = $(this.refs.submissionForm.getDOMNode())
+      let dataObj = {}
+      let $thisForm = $(this.refs.submissionForm.getDOMNode())
       $thisForm.serializeArray().forEach(function(item, i) {
         dataObj[item.name] = item.value
       })
@@ -24,7 +24,7 @@ App.SubmitModal = React.createClass({
 
   componentDidMount () {
     $('input', this.refs.submissionForm.getDOMNode()).each(function () {
-      var $this = $(this)
+      let $this = $(this)
       $this.attr('length', $this.attr('maxlength')).characterCounter()
     })
   },

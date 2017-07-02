@@ -45,10 +45,23 @@ App.InfoModal = React.createClass({
               </div>
               <div className='col s12 m6'>
                 <div className='section'>
-                <h4>Submit / Update your Project</h4>
-                <p>If you have authored a Bitcoin Project and would like to have it added to <i>State of the Bits</i>, please <a onClick={this.clickSubmitDapp} ref='submitModal' href='#'>click here to submit it for approval</a>.</p>
+                  <h4>Submit / Update your Project</h4>
+                  <p>If you have authored a Bitcoin Project and would like to have it
+                    added to <i>State of the Bits</i>, please <a onClick={this.clickSubmitDapp}
+                    ref='submitModal' href='#'>click here to submit it for approval</a>.</p>
+                </div>
               </div>
-
+              <div className="col s12 m6">
+                <div className="section">
+                  <h4>Jump to the top of the list</h4>
+                  <p>To get into the top 4 places on this site for a week
+                    currently costs: {App.DappsList.getProjectCount() / 5000} bitcoin</p>
+                  <p>Email us at <a href='mailto:bitcoinsetupnz@gmail.com' target='_blank'>bitcoinsetupnz@gmail.com </a>
+                     if you are interested</p>
+                  <p>Note: the price is calcuated by the amount of projects / 5000 in whole bitcoin. E.g. with
+                    500 projects the price will be 0.1 bitcoin per week.
+                  </p>
+                </div>
               </div>
             </div>
 

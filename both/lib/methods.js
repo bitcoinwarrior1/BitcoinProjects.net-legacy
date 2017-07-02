@@ -4,7 +4,7 @@ Meteor.methods({
   newSubmission: function (data) {
     // validate the data before emailing it out
     // TODO rate limit?
-    var ShortString = Match.Where(function (x) {
+    let ShortString = Match.Where(function (x) {
       check(x, String)
       return x.length <= 128
     })
