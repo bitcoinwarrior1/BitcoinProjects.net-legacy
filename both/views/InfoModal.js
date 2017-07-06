@@ -47,7 +47,7 @@ App.InfoModal = React.createClass({
                 <div className='section'>
                   <h4>Submit / Update your Project</h4>
                   <p>If you have authored a Bitcoin Project and would like to have it
-                    added to <i>State of the Bits</i>, please <a onClick={this.clickSubmitDapp}
+                    added to <i>Bitcoin Projects</i>, please <a onClick={this.clickSubmitDapp}
                     ref='submitModal' href='#'>click here to submit it for approval</a>.</p>
                 </div>
               </div>
