@@ -4,36 +4,13 @@ App.IconButton = React.createClass({
     $('#' + target).openModal();
     this.recordClick(target);
   },
-  recordClick(link){
-    //TODO:
-    //create API to save clicks
-    //record IP address so that spammers cannot add multiple clicks
-    let myIpAddress = this.myIP();
-
-    if(myIpAddress != false)
-    {
-        request.post("{need API HERE}" + link + "/" + myIpAddress, function(err,data){
-            console.log("saved to db")
-        });
-    }
-
-  },
-  myIP()
+  recordClick(link)
   {
-        if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
-        else xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    request.post("https://op-return.herokuapp.com/bitcoinprojects/" + link, function(err,data)
+    {
+        console.log("saved click to db");
+    });
 
-        xmlhttp.open("GET","http://api.hostip.info/get_html.php",false);
-        xmlhttp.send();
-
-        let hostipInfo = xmlhttp.responseText.split("\n");
-
-        for (i=0; hostipInfo.length >= i; i++)
-        {
-            ipAddress = hostipInfo[i].split(":");
-            if ( ipAddress[0] == "IP" ) return ipAddress[1];
-        }
-        return false;
   },
   componentDidMount(){
   },
