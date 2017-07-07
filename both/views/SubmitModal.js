@@ -51,7 +51,6 @@ App.SubmitModal = React.createClass({
               <p>6. Demo </p>
               <p>7. Working Prototype </p>
               <p>8. Live </p>
-
         </div>
       </div>
     </div>

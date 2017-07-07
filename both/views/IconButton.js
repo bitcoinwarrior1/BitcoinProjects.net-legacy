@@ -1,12 +1,19 @@
 App.IconButton = React.createClass({
-  handleClick(){
-    let {target} = this.props;
-    $('#' + target).openModal()
-  },
+    handleClick(){
+        let {target} = this.props;
+        $('#' + target).openModal();
+        this.recordClick(target);
+    },
+    recordClick(link)
+    {
+        request.post("https://op-return.herokuapp.com/bitcoinprojects/" + link, function(err,data)
+        {
+            console.log("saved click to db");
+        });
+    },
   componentDidMount(){
   },
   componentDidUpdate(){
-
   },
   runModal(){
   },
