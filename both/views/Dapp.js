@@ -51,7 +51,6 @@ App.Dapp = React.createClass({
                   <i className='icon-link fa fa-fw fa-reddit'></i>
                 </a>
                 }
-                }
               </p>
               <p className='pull-right'>
                 {this.props.dapp.last_update}

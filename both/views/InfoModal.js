@@ -1,12 +1,12 @@
 App.InfoModal = React.createClass({
 
   clickSubmitDapp (e) {
-    e.preventDefault()
+    e.preventDefault();
     $('#infoModal').closeModal({
       complete: function () {
         $('#submitModal').openModal()
       }
-    })
+    });
   },
 
   render () {
@@ -58,7 +58,7 @@ App.InfoModal = React.createClass({
                     currently costs: {App.DappsList.getProjectCount() / 5000} bitcoin</p>
                   <p>Email us at <a href='mailto:bitcoinsetupnz@gmail.com' target='_blank'>bitcoinsetupnz@gmail.com </a>
                      if you are interested</p>
-                  <p>Note: the price is calcuated by the amount of projects / 5000 in whole bitcoin. E.g. with
+                  <p>Note: the price is calculated by the amount of projects / 5000 in whole bitcoin. E.g. with
                     500 projects the price will be 0.1 bitcoin per week.
                   </p>
                 </div>
@@ -70,4 +70,4 @@ App.InfoModal = React.createClass({
     )
   }
 
-})
+});
