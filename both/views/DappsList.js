@@ -152,7 +152,7 @@ App.DappsList = React.createClass({
                       Service by <a target='_blank' href='https://github.com/James-Sangalli'>James</a>
                     </div>
                     <div className='col s12 m4'>
-                      UI by <a target='_blank' href='http://hitchcott.com'>Hitchcott</a>
+                      Follow us on <a target='_blank' href='https://twitter.com/bitc0inprojects'>Twitter</a>
                     </div>
                     <div className='col s12 m4'>
                       Fork me on <a target='_blank' href='https://github.com/James-Sangalli/State-of-the-bits'><i
