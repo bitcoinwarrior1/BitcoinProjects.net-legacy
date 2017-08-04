@@ -18,17 +18,17 @@ if (Meteor.isClient) {
   let $window = $(window)
 }
 
-App.DappsList = React.createClass({
+App.projectsList = React.createClass({
   // This mixin makes the getMeteorData method work
   mixins: [ReactMeteorData],
   // fields in mongo to use in search query
   searchFields: ['name', 'description', 'tags', 'contact', 'license', 'status'],
-  // Loads items from the Dapps collection and puts them on this.data.dapps
+  // Loads items from the projects collection and puts them on this.data.projects
     statics : {
       getProjectCount()
       {
           //used for the InfoModal page whereby the dapp count is needed to price the top listing
-          let data = new App.DappsList;
+          let data = new App.projectsList;
           return data.getMeteorData().count;
       }
     },
@@ -40,7 +40,7 @@ App.DappsList = React.createClass({
         let limit = App.initialBatchSize
         let searchQuery = ''
         // subscribe to the data source, server and client
-        Meteor.subscribe('dapps')
+        Meteor.subscribe('projects')
         // CLIENT ONLY
         if (typeof Session !== 'undefined') {
             // Use the search query if one exists
@@ -61,15 +61,15 @@ App.DappsList = React.createClass({
                 }
             }
         }
-        data.dapps = App.cols.Dapps.find(query, {sort: sort, limit: limit}).fetch()
-        data.count = App.cols.Dapps.find(query).count()
+        data.projects = App.cols.Projects.find(query, {sort: sort, limit: limit}).fetch()
+        data.count = App.cols.Projects.find(query).count()
         data.resultType = searchQuery.length > 0 ? 'found' : 'listed'
         return data
     },
 
     // infinite scrolling
     loadMoreItems () {
-        let childCount = $('.col', this.refs.dappSection.getDOMNode()).size()
+        let childCount = $('.col', this.refs.projectsection.getDOMNode()).size()
         let sessionGetLastResult = Session.get('lastResult')
         // don't try to load more items until we've matched the last request, or never fire if done
         if (childCount >= sessionGetLastResult) {
@@ -79,7 +79,7 @@ App.DappsList = React.createClass({
 
     handleScroll: _.debounce(function () {
         // get the position of `blocksInAdvance` blocks before it ends
-        let $lastItem = $('.col:last-child', this.refs.dappSection.getDOMNode())
+        let $lastItem = $('.col:last-child', this.refs.projectsection.getDOMNode())
         let targetPosition = Math.round($lastItem.offset().top - ($lastItem.height() * blocksInAdvance))
         if ($window.scrollTop() + $window.height() >= targetPosition) {
             this.loadMoreItems()
@@ -88,7 +88,7 @@ App.DappsList = React.createClass({
 
     componentDidUpdate () {
         // check to see if screen is fully populated
-        let $lastItem = $('.col:last-child', this.refs.dappSection.getDOMNode())
+        let $lastItem = $('.col:last-child', this.refs.projectsection.getDOMNode())
         if ($lastItem.size() && Math.floor($lastItem.offset().top) + $lastItem.height() < $window.height()) {
             this.loadMoreItems()
         }
@@ -107,9 +107,9 @@ App.DappsList = React.createClass({
         window.scrollTo(0, 0)
     },
 
-    renderDapps () {
-        if (this.data.dapps.length) {
-            return this.data.dapps.map(function (dapp) {
+    renderprojects () {
+        if (this.data.projects.length) {
+            return this.data.projects.map(function (dapp) {
                 return <App.Dapp
                     key={dapp._id}
                     dapp={dapp}/>
@@ -142,8 +142,8 @@ App.DappsList = React.createClass({
               <div className='black'>
                 <div className='row'>
                   < App.FilterArea data={this.data}/>
-                  <section ref='dappSection' className='dapps row'>
-                      {this.renderDapps()}
+                  <section ref='projectsection' className='projects row'>
+                      {this.renderprojects()}
                   </section>
                 </div>
                 <footer className='white-text center-align'>

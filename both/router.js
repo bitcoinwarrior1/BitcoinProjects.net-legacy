@@ -2,12 +2,12 @@
 
 FlowRouter.route('/', {
   action () {
-    ReactLayout.render(App.DappsList, {})
+    ReactLayout.render(App.projectsList, {})
   }
 });
 FlowRouter.route('/dapp/:id', {
   action (params) {
-    ReactLayout.render(App.DappsView, {_id: params.id})
+    ReactLayout.render(App.projectsView, {_id: params.id})
   }
 });
 

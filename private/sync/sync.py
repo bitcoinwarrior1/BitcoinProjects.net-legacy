@@ -10,7 +10,7 @@ from pymongo import MongoClient
 import re
 from dateutil import parser
 
-DAPPS_SHEET_KEY = '1mabXCaQwt8pxq45xsqosEAUqZ-F6csD3r771DxE9fJE'
+projects_SHEET_KEY = '1mabXCaQwt8pxq45xsqosEAUqZ-F6csD3r771DxE9fJE'
 MONGODB_URL = os.getenv('MONGODB_URL', 'mongodb://127.0.0.1:3001/meteor')
 
 def sync_sheet(worksheet, db):
@@ -24,7 +24,7 @@ def sync_sheet(worksheet, db):
         if row_nr > 0:
             name, description, url, github, reddit, contact, tags, license, platform, status, last_update, icon = cell_list
             tags = [tag.strip() for tag in tags.split(',')]
-            db.dapps.update({'name': name}, {'$set': {
+            db.projects.update({'name': name}, {'$set': {
                 'row_nr': row_nr,
                 'description': description,
                 'url': url,
@@ -57,7 +57,7 @@ def update_sheet(worksheet, db, data):
         dt = parser.parse(row['timestamp'])
         timestamp = dt.strftime('%Y-%m-%d')
         print row['timestamp'], dt, timestamp
-        db_entry = db.dapps.find_one({'name': re.compile('^' + re.escape(project_name) + '$', re.IGNORECASE)})
+        db_entry = db.projects.find_one({'name': re.compile('^' + re.escape(project_name) + '$', re.IGNORECASE)})
         if db_entry:
             print 'Existing', row['project_name'], db_entry['row_nr']
             print worksheet.row_values(db_entry['row_nr'] + 1)
@@ -83,12 +83,12 @@ def main():
     credentials = credentials.create_scoped(['https://spreadsheets.google.com/feeds'])
     gc = gspread.authorize(credentials)
 
-    sh = gc.open_by_key(DAPPS_SHEET_KEY)
+    sh = gc.open_by_key(projects_SHEET_KEY)
     worksheet = sh.get_worksheet(0)
 
     client = MongoClient(MONGODB_URL)
     db = client.get_default_database()
-    db.dapps.ensure_index('name')
+    db.projects.ensure_index('name')
 
     # data = import_queue(db)
     # update_sheet(worksheet, db, data)

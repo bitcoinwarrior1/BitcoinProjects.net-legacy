@@ -55,7 +55,7 @@ App.InfoModal = React.createClass({
                 <div className="section">
                   <h4>Jump to the top of the list</h4>
                   <p>To get into the top 4 places on this site for a week (in the default sorting order)
-                    currently costs: {App.DappsList.getProjectCount() / 5000} bitcoin</p>
+                    currently costs: {App.projectsList.getProjectCount() / 5000} bitcoin</p>
                   <p>Email us at <a href='mailto:bitcoinsetupnz@gmail.com' target='_blank'>bitcoinsetupnz@gmail.com </a>
                      if you are interested</p>
                   <p>Note: the price is calculated by the amount of projects / 5000 in whole bitcoin. E.g. with

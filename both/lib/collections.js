@@ -2,21 +2,21 @@
 this.App = {}
 
 App.cols = {
-  Dapps: new Mongo.Collection('dapps'),
+  Projects: new Mongo.Collection('projects'),
   Queue: new Mongo.Collection('queue')
 }
 
 if (Meteor.isServer) {
-  Meteor.publish('dapps', function () {
+  Meteor.publish('projects', function () {
     // TODO limit this to infinite scroll data
-    return App.cols.Dapps.find({})
+    return App.cols.Projects.find({})
   }, {
-    url: "/api/dapps"
+    url: "/api/projects"
   })
 
-  Meteor.publish('dapps-by-tag', function (tag) {
-    return App.cols.Dapps.find({tags: tag})
+  Meteor.publish('projects-by-tag', function (tag) {
+    return App.cols.Projects.find({tags: tag})
   }, {
-    url: "/api/dapps-by-tag/:0"
+    url: "/api/projects-by-tag/:0"
   })
 }
