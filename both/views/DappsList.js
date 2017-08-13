@@ -149,7 +149,7 @@ App.projectsList = React.createClass({
                 <footer className='white-text center-align'>
                   <div className='row'>
                     <div className='col s12 m4'>
-                      Service by <a target='_blank' href='https://github.com/James-Sangalli'>James</a>
+                      As seen on <a target='_blank' href='https://bitcoin.org/en/resources'>Bitcoin.org</a>
                     </div>
                     <div className='col s12 m4'>
                       Follow us on <a target='_blank' href='https://twitter.com/bitc0inprojects'>Twitter</a>

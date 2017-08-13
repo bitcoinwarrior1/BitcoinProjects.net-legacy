@@ -18,7 +18,7 @@ App.InfoModal = React.createClass({
             <div className='row center-align'>
               <h3>A Curated Collection of Bitcoin projects</h3>
               <p>
-                List maintained by <a href='https://github.com/James-Sangalli' target='_blank'>James</a>, Follow us on <a href='https://twitter.com/bitc0inprojects' target='_blank'>Twitter</a> , Interface by <a href='http://hitchcott.com' target='_blank'>Chris Hitchcott</a>
+                List maintained by <a href='https://github.com/James-Sangalli' target='_blank'>James Sangalli</a>, Follow us on <a href='https://twitter.com/bitc0inprojects' target='_blank'>Twitter</a> , Interface by <a href='http://hitchcott.com' target='_blank'>Chris Hitchcott</a>
               </p>
             </div>
           </div>
