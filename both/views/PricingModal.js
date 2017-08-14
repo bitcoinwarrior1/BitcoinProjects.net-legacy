@@ -20,7 +20,11 @@ App.PricingModal = React.createClass({
                                 500 projects the price will be 0.1 bitcoin per week.
                             </i>
                         </p>
-                        <p> <strong> We offer a no questions asked refund guarantee for 30 days </strong>
+                        <p>
+                            <strong> We offer a no questions asked refund guarantee for 30 days </strong>
+                        </p>
+                        <p>
+                            <b>As seen on <a href="https://bitcoin.org/en/resources"> Bitcoin.org </a></b>
                         </p>
                    </div>
                 </div>
