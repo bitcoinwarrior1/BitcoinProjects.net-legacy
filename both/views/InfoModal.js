@@ -9,12 +9,22 @@ App.InfoModal = React.createClass({
     });
   },
 
-  render () {
+  clickPricingModel(e){
+      e.preventDefault();
+      $("#infoModal").closeModal({
+        complete: function() {
+          $("#pricingModal").openModal()
+        }
+      });
+  },
+
+
+  render ()
+  {
     return (
       <div id='infoModal' className='modal'>
         <div className='modal-content'>
            <div className='section'>
-
             <div className='row center-align'>
               <h3>The directory of Bitcoin projects</h3>
               <p>
@@ -44,25 +54,28 @@ App.InfoModal = React.createClass({
               <div className='col s12 m6'>
                 <div className='section'>
                   <h4>Submit / Update your Project</h4>
-                  <p>If you have authored a Bitcoin Project and would like to have it
+                  <p>
+                    If you have authored a Bitcoin Project and would like to have it
                     added to <i>Bitcoin Projects</i>, please <a onClick={this.clickSubmitProject}
-                    ref='submitModal' href='#'>click here to submit it for approval</a>.</p>
+                    ref='submitModal' href='#'>click here to submit it for approval</a>.
+                  </p>
                 </div>
               </div>
               <div className="col s12 m6">
                 <div className="section">
                   <h4>Jump to the top of the list</h4>
-                  <p>To get into the top 4 places on this site for a week (in the default sorting order)
-                    currently costs: {App.projectsList.getProjectCount() / 5000} bitcoin</p>
-                  <p>Email us at <a href='mailto:bitcoinsetupnz@gmail.com' target='_blank'>bitcoinsetupnz@gmail.com </a>
-                     if you are interested</p>
-                  <p>Note: the price is calculated by the amount of projects / 5000 in whole bitcoin. E.g. with
-                    500 projects the price will be 0.1 bitcoin per week.
-                  </p>
+                    <p>To get to the top of the list take a look here <a onClick={this.clickPricingModel}
+                         ref="pricingModal" href="#"> at our pricing model</a>
+                    </p>
+                </div>
+              </div>
+              <div className="col s12 m6">
+                <div className="section">
+                  <h4>Looking for Blockchain Developers?</h4>
+                  <p>Email us at <a href="mailto:bitcoinsetupnz@gmail.com">bitcoinsetupnz@gmail.com</a></p>
                 </div>
               </div>
             </div>
-
         </div>
       </div>
     )
