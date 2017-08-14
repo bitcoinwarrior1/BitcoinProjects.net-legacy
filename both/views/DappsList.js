@@ -22,7 +22,7 @@ App.projectsList = React.createClass({
   // This mixin makes the getMeteorData method work
   mixins: [ReactMeteorData],
   // fields in mongo to use in search query
-  searchFields: ['name', 'description', 'tags', 'contact', 'license', 'status'],
+  searchFields: ['name', 'description', 'twitter', 'contact', 'license', 'status'],
   // Loads items from the projects collection and puts them on this.data.projects
     statics : {
       getProjectCount()

@@ -22,8 +22,8 @@ def sync_sheet(worksheet, db):
         print(cell_list)
 
         if row_nr > 0:
-            name, description, url, github, reddit, contact, tags, license, platform, status, last_update, icon = cell_list
-            tags = [tag.strip() for tag in tags.split(',')]
+            name, description, url, github, reddit, contact, twitter, license, platform, status, last_update, icon = cell_list
+            twitter = [twitterProfile.strip() for twitterProfile in twitter.split(',')]
             db.projects.update({'name': name}, {'$set': {
                 'row_nr': row_nr,
                 'description': description,
@@ -31,7 +31,7 @@ def sync_sheet(worksheet, db):
                 'github': github,
                 'reddit': reddit,
                 'contact': contact,
-                'tags': tags,
+                'twitter': twitter,
                 'license': license,
                 'platform': platform,
                 'status': status,
@@ -70,7 +70,7 @@ def update_sheet(worksheet, db, data):
                 row['github'],
                 row['reddit'],
                 row['contact'],
-                row['tags'],
+                row['twitter'],
                 row['license'],
                 'Bitcoin',
                 row['status'],

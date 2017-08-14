@@ -15,8 +15,8 @@ App.Dapp = React.createClass({
   ],
 
   render () {
-    let statusColor = this.statusColors[parseInt(this.props.dapp.status[0], 10)]
-    let link = this.props.dapp.url || this.props.dapp.github || this.props.dapp.reddit
+    let statusColor = this.statusColors[parseInt(this.props.dapp.status[0], 10)];
+    let link = this.props.dapp.url || this.props.dapp.github || this.props.dapp.reddit || this.props.dapp.twitter;
     return (
       <div className='col ms12 m4 l3 xl2 xxl1'>
         <div className={'card hoverable dapp-card ' + statusColor}>
@@ -49,6 +49,11 @@ App.Dapp = React.createClass({
                 { this.props.dapp.reddit &&
                 <a target='_blank' href={this.props.dapp.reddit}>
                   <i className='icon-link fa fa-fw fa-reddit'></i>
+                </a>
+                }
+                { this.props.dapp.twitter &&
+                <a target='_blank' href={this.props.dapp.twitter}>
+                  <i className = 'icon-link fa fa-fw fa-twitter'></i>
                 </a>
                 }
               </p>

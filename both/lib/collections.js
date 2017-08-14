@@ -15,7 +15,7 @@ if (Meteor.isServer) {
   });
 
   Meteor.publish('projects-by-tag', function (tag) {
-    return App.cols.Projects.find({tags: tag})
+    return App.cols.Projects.find({twitter: tag})
   }, {
     url: "/api/projects-by-tag/:0"
   })
