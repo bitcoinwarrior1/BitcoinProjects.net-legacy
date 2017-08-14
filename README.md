@@ -2,7 +2,7 @@
 Project list: 
 https://docs.google.com/spreadsheets/d/1mabXCaQwt8pxq45xsqosEAUqZ-F6csD3r771DxE9fJE/edit#gid=0
 
-This repo is a originally based from [EtherCasts](http://ethercasts.com) but has been altered for Bitcoin Projects instead
+This repo is a originally based from [State of the Dapps](https://github.com/state-of-the-dapps/state-of-the-dapps) but has been altered for Bitcoin Projects
 
 ## Development
 
