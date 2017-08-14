@@ -23,7 +23,7 @@ def sync_sheet(worksheet, db):
 
         if row_nr > 0:
             name, description, url, github, reddit, contact, twitter, license, platform, status, last_update, icon = cell_list
-           
+
             db.projects.update({'name': name}, {'$set': {
                 'row_nr': row_nr,
                 'description': description,
