@@ -28,7 +28,7 @@ App.InfoModal = React.createClass({
             <div className='row center-align'>
               <h3>The directory of Bitcoin projects</h3>
               <p>
-                Follow us on <a href='https://twitter.com/bitc0inprojects' target='_blank'>Twitter</a> and Contact us at <a href='mailto:bitcoinsetupnz@gmail.com' target='_blank'>bitcoinsetupnz@gmail.com</a>
+                Follow us on <a href='https://twitter.com/bitc0inprojects' target='_blank'>Twitter</a> and contact us at <a href='mailto:bitcoinsetupnz@gmail.com' target='_blank'>bitcoinsetupnz@gmail.com</a>
               </p>
             </div>
           </div>
@@ -53,7 +53,7 @@ App.InfoModal = React.createClass({
                 <div className='section'>
                   <h4>Submit / Update your Project</h4>
                   <p>
-                    If you have authored a Bitcoin Project and would like to have it
+                    If you have created a Bitcoin Project and would like to have it
                     added to <i>Bitcoin Projects</i>, please <a onClick={this.clickSubmitProject}
                     ref='submitModal' href='#'>click here to submit it for approval</a>.
                   </p>
