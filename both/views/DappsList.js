@@ -45,7 +45,7 @@ App.projectsList = React.createClass({
         if (typeof Session !== 'undefined') {
             // Use the search query if one exists
             searchQuery = Session.get('searchQuery') || '';
-            limit = Session.get('lastResult');
+            //limit = Session.get('lastResult');
             sort = {};
             sort[Session.get('searchSortType')] = Session.get('searchSortDirection');
             // the defaultSortType will always remain as a 'secondary sort'
@@ -61,39 +61,39 @@ App.projectsList = React.createClass({
                 }
             }
         }
-        data.projects = App.cols.Projects.find(query, {sort: sort, limit: limit}).fetch()
+        data.projects = App.cols.Projects.find(query, {sort: sort}).fetch()
         data.count = App.cols.Projects.find(query).count();
         data.resultType = searchQuery.length > 0 ? 'found' : 'listed';
         return data
     },
 
     // infinite scrolling
-    loadMoreItems ()
-    {
-        let childCount = $('.col', this.refs.projectsection.getDOMNode()).size();
-        let sessionGetLastResult = Session.get('lastResult');
-        // don't try to load more items until we've matched the last request, or never fire if done
-        if (childCount >= sessionGetLastResult) {
-            Session.set('lastResult', sessionGetLastResult + chunkSize)
-        }
-    },
+    // loadMoreItems ()
+    // {
+    //     let childCount = $('.col', this.refs.projectsection.getDOMNode()).size();
+    //     let sessionGetLastResult = Session.get('lastResult');
+    //     // don't try to load more items until we've matched the last request, or never fire if done
+    //     if (childCount >= sessionGetLastResult) {
+    //         Session.set('lastResult', sessionGetLastResult + chunkSize)
+    //     }
+    // },
 
-    handleScroll: _.debounce(function () {
-        // get the position of `blocksInAdvance` blocks before it ends
-        let $lastItem = $('.col:last-child', this.refs.projectsection.getDOMNode())
-        let targetPosition = Math.round($lastItem.offset().top - ($lastItem.height() * blocksInAdvance))
-        if ($window.scrollTop() + $window.height() >= targetPosition) {
-            this.loadMoreItems()
-        }
-    }, 200),
-
-    componentDidUpdate () {
-        // check to see if screen is fully populated
-        let $lastItem = $('.col:last-child', this.refs.projectsection.getDOMNode())
-        if ($lastItem.size() && Math.floor($lastItem.offset().top) + $lastItem.height() < $window.height()) {
-            this.loadMoreItems()
-        }
-    },
+    // handleScroll: _.debounce(function () {
+    //     // get the position of `blocksInAdvance` blocks before it ends
+    //     let $lastItem = $('.col:last-child', this.refs.projectsection.getDOMNode())
+    //     let targetPosition = Math.round($lastItem.offset().top - ($lastItem.height() * blocksInAdvance))
+    //     if ($window.scrollTop() + $window.height() >= targetPosition) {
+    //         this.loadMoreItems()
+    //     }
+    // }, 200),
+    //
+    // componentDidUpdate () {
+    //     // check to see if screen is fully populated
+    //     let $lastItem = $('.col:last-child', this.refs.projectsection.getDOMNode())
+    //     if ($lastItem.size() && Math.floor($lastItem.offset().top) + $lastItem.height() < $window.height()) {
+    //         this.loadMoreItems()
+    //     }
+    // },
 
     componentDidMount () {
         window.addEventListener('scroll', this.handleScroll)
