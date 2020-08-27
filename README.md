@@ -36,4 +36,4 @@ Sync:
 
 ## License
 
-Released under the MIT License.
+Released under the MIT License
