@@ -10,10 +10,9 @@
   },
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "meteor-node-stubs": "^0.2.11",
-    "superagent": "^3.5.2"
+    "meteor-node-stubs": "^0.2.11"
   },
-  "name": "State-of-the-bits",
+  "name": "bitcoinprojects",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
@@ -29,9 +28,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/James-Sangalli/State-of-the-bits/issues"
+    "url": "https://github.com/James-Sangalli/BitcoinProjects.net/issues"
   },
-  "homepage": "https://github.com/James-Sangalli/State-of-the-bits#readme"
+  "homepage": "BitcoinProjects.net"
 }
