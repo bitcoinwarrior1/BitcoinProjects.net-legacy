@@ -153,9 +153,6 @@ App.projectsList = React.createClass({
                       As seen on <a target='_blank' href='https://bitcoin.org/en/resources'>Bitcoin.org</a>
                     </div>
                     <div className='col s12 m4'>
-                      Follow us on <a target='_blank' href='https://twitter.com/bitc0inprojects'>Twitter</a>
-                    </div>
-                    <div className='col s12 m4'>
                       <a target='_blank' href='mailto:bitcoinsetupnz@gmail.com'>Contact Us</a>
                     </div>
                   </div>
