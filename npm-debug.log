@@ -1,0 +1,1593 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/jamessangalli/.meteor/packages/meteor-tool/.1.4.3_1.blaytd.c2y3s++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node',
+1 verbose cli   '/Users/jamessangalli/.meteor/packages/meteor-tool/.1.4.3_1.blaytd.c2y3s++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'fibers' ]
+2 info using npm@4.1.2
+3 info using node@v4.7.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData fibers
+8 silly fetchNamedPackageData fibers
+9 silly mapToRegistry name fibers
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'fibers',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'fibers',
+12 silly mapToRegistry   name: 'fibers',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/fibers
+14 verbose request uri https://registry.npmjs.org/fibers
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 5:05:42 PM
+17 verbose request id f700616ec2445207
+18 http request GET https://registry.npmjs.org/fibers
+19 http 200 https://registry.npmjs.org/fibers
+20 verbose headers { date: 'Wed, 02 Jun 2021 05:05:43 GMT',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'transfer-encoding': 'chunked',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'cf-ray': '658e25f438d3a43f-AKL',
+20 verbose headers   'cache-control': 'public, max-age=300',
+20 verbose headers   etag: 'W/"6c0e9356e874f2fc78b89e76978831a0"',
+20 verbose headers   'last-modified': 'Wed, 22 Apr 2020 20:30:20 GMT',
+20 verbose headers   vary: 'accept-encoding, accept',
+20 verbose headers   'cf-cache-status': 'REVALIDATED',
+20 verbose headers   'cf-request-id': '0a6cb60c9e0000a43f1817e000000001',
+20 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 verbose headers   server: 'cloudflare',
+20 verbose headers   'content-encoding': 'gzip' }
+21 silly get cb [ 200,
+21 silly get   { date: 'Wed, 02 Jun 2021 05:05:43 GMT',
+21 silly get     'content-type': 'application/json',
+21 silly get     'transfer-encoding': 'chunked',
+21 silly get     connection: 'keep-alive',
+21 silly get     'cf-ray': '658e25f438d3a43f-AKL',
+21 silly get     'cache-control': 'public, max-age=300',
+21 silly get     etag: 'W/"6c0e9356e874f2fc78b89e76978831a0"',
+21 silly get     'last-modified': 'Wed, 22 Apr 2020 20:30:20 GMT',
+21 silly get     vary: 'accept-encoding, accept',
+21 silly get     'cf-cache-status': 'REVALIDATED',
+21 silly get     'cf-request-id': '0a6cb60c9e0000a43f1817e000000001',
+21 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 silly get     server: 'cloudflare',
+21 silly get     'content-encoding': 'gzip' } ]
+22 verbose get saving fibers to /Users/jamessangalli/.npm/registry.npmjs.org/fibers/.cache.json
+23 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule fibers@5.0.0 checking installable status
+37 silly cache add args [ 'fibers', null ]
+38 verbose cache add spec fibers
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'fibers',
+39 silly cache add   scope: null,
+39 silly cache add   escapedName: 'fibers',
+39 silly cache add   name: 'fibers',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed fibers@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for fibers
+42 info addNameTag [ 'fibers', 'latest' ]
+43 silly mapToRegistry name fibers
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry data Result {
+46 silly mapToRegistry   raw: 'fibers',
+46 silly mapToRegistry   scope: null,
+46 silly mapToRegistry   escapedName: 'fibers',
+46 silly mapToRegistry   name: 'fibers',
+46 silly mapToRegistry   rawSpec: '',
+46 silly mapToRegistry   spec: 'latest',
+46 silly mapToRegistry   type: 'tag' }
+47 silly mapToRegistry uri https://registry.npmjs.org/fibers
+48 verbose addNameTag registry:https://registry.npmjs.org/fibers not in flight; fetching
+49 verbose get https://registry.npmjs.org/fibers not expired, no request
+50 silly addNameTag next cb for fibers with tag latest
+51 silly addNamed fibers@5.0.0
+52 verbose addNamed "5.0.0" is a plain semver version for fibers
+53 silly mapToRegistry name fibers
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'fibers',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   escapedName: 'fibers',
+56 silly mapToRegistry   name: 'fibers',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/fibers
+58 verbose addRemoteTarball https://registry.npmjs.org/fibers/-/fibers-5.0.0.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/fibers/-/fibers-5.0.0.tgz',
+59 verbose addRemoteTarball   '3a60e0695b3ee5f6db94e62726716fa7a59acc41' ]
+60 info retry fetch attempt 1 at 5:05:43 PM
+61 info attempt registry request try #1 at 5:05:43 PM
+62 http fetch GET https://registry.npmjs.org/fibers/-/fibers-5.0.0.tgz
+63 http fetch 200 https://registry.npmjs.org/fibers/-/fibers-5.0.0.tgz
+64 silly fetchAndShaCheck shasum 3a60e0695b3ee5f6db94e62726716fa7a59acc41
+65 verbose addTmpTarball /var/folders/0s/45y2fdk967b8qxthgx6038k00000gn/T/npm-3735-4eb5b6c2/registry.npmjs.org/fibers/-/fibers-5.0.0.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for fibers@5.0.0
+67 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+68 silly cache afterAdd fibers@5.0.0
+69 verbose afterAdd /Users/jamessangalli/.npm/fibers/5.0.0/package/package.json not in flight; writing
+70 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+71 verbose afterAdd /Users/jamessangalli/.npm/fibers/5.0.0/package/package.json written
+72 silly fetchNamedPackageData detect-libc
+73 silly mapToRegistry name detect-libc
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry data Result {
+76 silly mapToRegistry   raw: 'detect-libc',
+76 silly mapToRegistry   scope: null,
+76 silly mapToRegistry   escapedName: 'detect-libc',
+76 silly mapToRegistry   name: 'detect-libc',
+76 silly mapToRegistry   rawSpec: '',
+76 silly mapToRegistry   spec: 'latest',
+76 silly mapToRegistry   type: 'tag' }
+77 silly mapToRegistry uri https://registry.npmjs.org/detect-libc
+78 verbose request uri https://registry.npmjs.org/detect-libc
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 5:05:44 PM
+81 http request GET https://registry.npmjs.org/detect-libc
+82 http 200 https://registry.npmjs.org/detect-libc
+83 verbose headers { date: 'Wed, 02 Jun 2021 05:05:45 GMT',
+83 verbose headers   'content-type': 'application/json; charset=UTF-8',
+83 verbose headers   'transfer-encoding': 'chunked',
+83 verbose headers   connection: 'keep-alive',
+83 verbose headers   'cf-ray': '658e25fccd52a43f-AKL',
+83 verbose headers   'cache-control': 'public, max-age=300',
+83 verbose headers   etag: 'W/"297520dc86a0267f1af8d43a0ba506b5"',
+83 verbose headers   'last-modified': 'Sat, 26 May 2018 22:01:48 GMT',
+83 verbose headers   vary: 'accept-encoding, accept',
+83 verbose headers   'cf-cache-status': 'REVALIDATED',
+83 verbose headers   'cf-request-id': '0a6cb611fc0000a43fde9d9000000001',
+83 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+83 verbose headers   server: 'cloudflare',
+83 verbose headers   'content-encoding': 'gzip' }
+84 silly get cb [ 200,
+84 silly get   { date: 'Wed, 02 Jun 2021 05:05:45 GMT',
+84 silly get     'content-type': 'application/json; charset=UTF-8',
+84 silly get     'transfer-encoding': 'chunked',
+84 silly get     connection: 'keep-alive',
+84 silly get     'cf-ray': '658e25fccd52a43f-AKL',
+84 silly get     'cache-control': 'public, max-age=300',
+84 silly get     etag: 'W/"297520dc86a0267f1af8d43a0ba506b5"',
+84 silly get     'last-modified': 'Sat, 26 May 2018 22:01:48 GMT',
+84 silly get     vary: 'accept-encoding, accept',
+84 silly get     'cf-cache-status': 'REVALIDATED',
+84 silly get     'cf-request-id': '0a6cb611fc0000a43fde9d9000000001',
+84 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+84 silly get     server: 'cloudflare',
+84 silly get     'content-encoding': 'gzip' } ]
+85 verbose get saving detect-libc to /Users/jamessangalli/.npm/registry.npmjs.org/detect-libc/.cache.json
+86 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+87 silly pickManifestFromRegistryMetadata spec >=1.0.3 <2.0.0 tag latest versions [ '0.0.1',
+87 silly pickManifestFromRegistryMetadata   '0.0.2',
+87 silly pickManifestFromRegistryMetadata   '0.0.3',
+87 silly pickManifestFromRegistryMetadata   '0.0.4',
+87 silly pickManifestFromRegistryMetadata   '0.0.5',
+87 silly pickManifestFromRegistryMetadata   '0.0.6',
+87 silly pickManifestFromRegistryMetadata   '0.0.7',
+87 silly pickManifestFromRegistryMetadata   '0.0.8',
+87 silly pickManifestFromRegistryMetadata   '0.1.0',
+87 silly pickManifestFromRegistryMetadata   '0.2.0',
+87 silly pickManifestFromRegistryMetadata   '1.0.0',
+87 silly pickManifestFromRegistryMetadata   '1.0.1',
+87 silly pickManifestFromRegistryMetadata   '1.0.2',
+87 silly pickManifestFromRegistryMetadata   '1.0.3' ]
+88 silly resolveWithNewModule detect-libc@1.0.3 checking installable status
+89 silly cache add args [ 'detect-libc@^1.0.3', null ]
+90 verbose cache add spec detect-libc@^1.0.3
+91 silly cache add parsed spec Result {
+91 silly cache add   raw: 'detect-libc@^1.0.3',
+91 silly cache add   scope: null,
+91 silly cache add   escapedName: 'detect-libc',
+91 silly cache add   name: 'detect-libc',
+91 silly cache add   rawSpec: '^1.0.3',
+91 silly cache add   spec: '>=1.0.3 <2.0.0',
+91 silly cache add   type: 'range' }
+92 silly addNamed detect-libc@>=1.0.3 <2.0.0
+93 verbose addNamed ">=1.0.3 <2.0.0" is a valid semver range for detect-libc
+94 silly addNameRange { name: 'detect-libc', range: '>=1.0.3 <2.0.0', hasData: false }
+95 silly mapToRegistry name detect-libc
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npmjs.org/
+98 silly mapToRegistry data Result {
+98 silly mapToRegistry   raw: 'detect-libc',
+98 silly mapToRegistry   scope: null,
+98 silly mapToRegistry   escapedName: 'detect-libc',
+98 silly mapToRegistry   name: 'detect-libc',
+98 silly mapToRegistry   rawSpec: '',
+98 silly mapToRegistry   spec: 'latest',
+98 silly mapToRegistry   type: 'tag' }
+99 silly mapToRegistry uri https://registry.npmjs.org/detect-libc
+100 verbose addNameRange registry:https://registry.npmjs.org/detect-libc not in flight; fetching
+101 verbose get https://registry.npmjs.org/detect-libc not expired, no request
+102 silly addNameRange number 2 { name: 'detect-libc', range: '>=1.0.3 <2.0.0', hasData: true }
+103 silly addNameRange versions [ 'detect-libc',
+103 silly addNameRange   [ '0.0.1',
+103 silly addNameRange     '0.0.2',
+103 silly addNameRange     '0.0.3',
+103 silly addNameRange     '0.0.4',
+103 silly addNameRange     '0.0.5',
+103 silly addNameRange     '0.0.6',
+103 silly addNameRange     '0.0.7',
+103 silly addNameRange     '0.0.8',
+103 silly addNameRange     '0.1.0',
+103 silly addNameRange     '0.2.0',
+103 silly addNameRange     '1.0.0',
+103 silly addNameRange     '1.0.1',
+103 silly addNameRange     '1.0.2',
+103 silly addNameRange     '1.0.3' ] ]
+104 silly pickManifestFromRegistryMetadata spec >=1.0.3 <2.0.0 tag latest versions [ '0.0.1',
+104 silly pickManifestFromRegistryMetadata   '0.0.2',
+104 silly pickManifestFromRegistryMetadata   '0.0.3',
+104 silly pickManifestFromRegistryMetadata   '0.0.4',
+104 silly pickManifestFromRegistryMetadata   '0.0.5',
+104 silly pickManifestFromRegistryMetadata   '0.0.6',
+104 silly pickManifestFromRegistryMetadata   '0.0.7',
+104 silly pickManifestFromRegistryMetadata   '0.0.8',
+104 silly pickManifestFromRegistryMetadata   '0.1.0',
+104 silly pickManifestFromRegistryMetadata   '0.2.0',
+104 silly pickManifestFromRegistryMetadata   '1.0.0',
+104 silly pickManifestFromRegistryMetadata   '1.0.1',
+104 silly pickManifestFromRegistryMetadata   '1.0.2',
+104 silly pickManifestFromRegistryMetadata   '1.0.3' ]
+105 silly addNamed detect-libc@latest
+106 verbose addNamed "latest" is being treated as a dist-tag for detect-libc
+107 info addNameTag [ 'detect-libc', 'latest' ]
+108 silly mapToRegistry name detect-libc
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry data Result {
+111 silly mapToRegistry   raw: 'detect-libc',
+111 silly mapToRegistry   scope: null,
+111 silly mapToRegistry   escapedName: 'detect-libc',
+111 silly mapToRegistry   name: 'detect-libc',
+111 silly mapToRegistry   rawSpec: '',
+111 silly mapToRegistry   spec: 'latest',
+111 silly mapToRegistry   type: 'tag' }
+112 silly mapToRegistry uri https://registry.npmjs.org/detect-libc
+113 verbose addNameTag registry:https://registry.npmjs.org/detect-libc already in flight; waiting
+114 silly addNameTag next cb for detect-libc with tag latest
+115 silly addNamed detect-libc@1.0.3
+116 verbose addNamed "1.0.3" is a plain semver version for detect-libc
+117 silly mapToRegistry name detect-libc
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry https://registry.npmjs.org/
+120 silly mapToRegistry data Result {
+120 silly mapToRegistry   raw: 'detect-libc',
+120 silly mapToRegistry   scope: null,
+120 silly mapToRegistry   escapedName: 'detect-libc',
+120 silly mapToRegistry   name: 'detect-libc',
+120 silly mapToRegistry   rawSpec: '',
+120 silly mapToRegistry   spec: 'latest',
+120 silly mapToRegistry   type: 'tag' }
+121 silly mapToRegistry uri https://registry.npmjs.org/detect-libc
+122 verbose addRemoteTarball https://registry.npmjs.org/detect-libc/-/detect-libc-1.0.3.tgz not in flight; adding
+123 verbose addRemoteTarball [ 'https://registry.npmjs.org/detect-libc/-/detect-libc-1.0.3.tgz',
+123 verbose addRemoteTarball   'fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b' ]
+124 info retry fetch attempt 1 at 5:05:44 PM
+125 info attempt registry request try #1 at 5:05:44 PM
+126 http fetch GET https://registry.npmjs.org/detect-libc/-/detect-libc-1.0.3.tgz
+127 http fetch 200 https://registry.npmjs.org/detect-libc/-/detect-libc-1.0.3.tgz
+128 silly fetchAndShaCheck shasum fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b
+129 verbose addTmpTarball /var/folders/0s/45y2fdk967b8qxthgx6038k00000gn/T/npm-3735-4eb5b6c2/registry.npmjs.org/detect-libc/-/detect-libc-1.0.3.tgz not in flight; adding
+130 verbose addTmpTarball already have metadata; skipping unpack for detect-libc@1.0.3
+131 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+132 silly cache afterAdd detect-libc@1.0.3
+133 verbose afterAdd /Users/jamessangalli/.npm/detect-libc/1.0.3/package/package.json not in flight; writing
+134 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+135 verbose afterAdd /Users/jamessangalli/.npm/detect-libc/1.0.3/package/package.json written
+136 silly fetchNamedPackageData inherits
+137 silly mapToRegistry name inherits
+138 silly mapToRegistry using default registry
+139 silly mapToRegistry registry https://registry.npmjs.org/
+140 silly mapToRegistry data Result {
+140 silly mapToRegistry   raw: 'inherits',
+140 silly mapToRegistry   scope: null,
+140 silly mapToRegistry   escapedName: 'inherits',
+140 silly mapToRegistry   name: 'inherits',
+140 silly mapToRegistry   rawSpec: '',
+140 silly mapToRegistry   spec: 'latest',
+140 silly mapToRegistry   type: 'tag' }
+141 silly mapToRegistry uri https://registry.npmjs.org/inherits
+142 silly fetchNamedPackageData process-nextick-args
+143 silly mapToRegistry name process-nextick-args
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry data Result {
+146 silly mapToRegistry   raw: 'process-nextick-args',
+146 silly mapToRegistry   scope: null,
+146 silly mapToRegistry   escapedName: 'process-nextick-args',
+146 silly mapToRegistry   name: 'process-nextick-args',
+146 silly mapToRegistry   rawSpec: '',
+146 silly mapToRegistry   spec: 'latest',
+146 silly mapToRegistry   type: 'tag' }
+147 silly mapToRegistry uri https://registry.npmjs.org/process-nextick-args
+148 silly fetchNamedPackageData safe-buffer
+149 silly mapToRegistry name safe-buffer
+150 silly mapToRegistry using default registry
+151 silly mapToRegistry registry https://registry.npmjs.org/
+152 silly mapToRegistry data Result {
+152 silly mapToRegistry   raw: 'safe-buffer',
+152 silly mapToRegistry   scope: null,
+152 silly mapToRegistry   escapedName: 'safe-buffer',
+152 silly mapToRegistry   name: 'safe-buffer',
+152 silly mapToRegistry   rawSpec: '',
+152 silly mapToRegistry   spec: 'latest',
+152 silly mapToRegistry   type: 'tag' }
+153 silly mapToRegistry uri https://registry.npmjs.org/safe-buffer
+154 silly fetchNamedPackageData string_decoder
+155 silly mapToRegistry name string_decoder
+156 silly mapToRegistry using default registry
+157 silly mapToRegistry registry https://registry.npmjs.org/
+158 silly mapToRegistry data Result {
+158 silly mapToRegistry   raw: 'string_decoder',
+158 silly mapToRegistry   scope: null,
+158 silly mapToRegistry   escapedName: 'string_decoder',
+158 silly mapToRegistry   name: 'string_decoder',
+158 silly mapToRegistry   rawSpec: '',
+158 silly mapToRegistry   spec: 'latest',
+158 silly mapToRegistry   type: 'tag' }
+159 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+160 verbose request uri https://registry.npmjs.org/inherits
+161 verbose request no auth needed
+162 info attempt registry request try #1 at 5:05:45 PM
+163 verbose etag W/"89b9ff30160e62cccc320a50b274ccd9"
+164 verbose lastModified Wed, 19 Jun 2019 20:18:57 GMT
+165 http request GET https://registry.npmjs.org/inherits
+166 verbose request uri https://registry.npmjs.org/process-nextick-args
+167 verbose request no auth needed
+168 info attempt registry request try #1 at 5:05:45 PM
+169 verbose etag W/"58d0a4cf2900b1705718975f98323cbd"
+170 verbose lastModified Wed, 19 Jun 2019 20:34:45 GMT
+171 http request GET https://registry.npmjs.org/process-nextick-args
+172 verbose request uri https://registry.npmjs.org/string_decoder
+173 verbose request no auth needed
+174 info attempt registry request try #1 at 5:05:45 PM
+175 verbose etag W/"0a93d953e853f8bf50ba2c73d36557a6"
+176 verbose lastModified Wed, 07 Aug 2019 09:20:40 GMT
+177 http request GET https://registry.npmjs.org/string_decoder
+178 verbose request uri https://registry.npmjs.org/safe-buffer
+179 verbose request no auth needed
+180 info attempt registry request try #1 at 5:05:45 PM
+181 verbose etag W/"7d10eeac57e4baa4c8bd0dd7caa1703c"
+182 verbose lastModified Sun, 10 May 2020 16:37:34 GMT
+183 http request GET https://registry.npmjs.org/safe-buffer
+184 http 304 https://registry.npmjs.org/inherits
+185 verbose headers { date: 'Wed, 02 Jun 2021 05:05:45 GMT',
+185 verbose headers   connection: 'keep-alive',
+185 verbose headers   'cf-ray': '658e26029884a43f-AKL',
+185 verbose headers   age: '6923',
+185 verbose headers   'cache-control': 'public, max-age=300',
+185 verbose headers   etag: '"89b9ff30160e62cccc320a50b274ccd9"',
+185 verbose headers   'last-modified': 'Wed, 19 Jun 2019 20:18:57 GMT',
+185 verbose headers   vary: 'Accept-Encoding',
+185 verbose headers   'cf-cache-status': 'HIT',
+185 verbose headers   'cf-request-id': '0a6cb6159b0000a43f00a32000000001',
+185 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+185 verbose headers   server: 'cloudflare' }
+186 silly get cb [ 304,
+186 silly get   { date: 'Wed, 02 Jun 2021 05:05:45 GMT',
+186 silly get     connection: 'keep-alive',
+186 silly get     'cf-ray': '658e26029884a43f-AKL',
+186 silly get     age: '6923',
+186 silly get     'cache-control': 'public, max-age=300',
+186 silly get     etag: '"89b9ff30160e62cccc320a50b274ccd9"',
+186 silly get     'last-modified': 'Wed, 19 Jun 2019 20:18:57 GMT',
+186 silly get     vary: 'Accept-Encoding',
+186 silly get     'cf-cache-status': 'HIT',
+186 silly get     'cf-request-id': '0a6cb6159b0000a43f00a32000000001',
+186 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+186 silly get     server: 'cloudflare' } ]
+187 verbose etag https://registry.npmjs.org/inherits from cache
+188 verbose get saving inherits to /Users/jamessangalli/.npm/registry.npmjs.org/inherits/.cache.json
+189 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+190 silly pickManifestFromRegistryMetadata spec >=2.0.3 <2.1.0 tag latest versions [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2', '2.0.3', '2.0.4' ]
+191 silly resolveWithNewModule inherits@2.0.4 checking installable status
+192 silly cache add args [ 'inherits@~2.0.3', null ]
+193 verbose cache add spec inherits@~2.0.3
+194 silly cache add parsed spec Result {
+194 silly cache add   raw: 'inherits@~2.0.3',
+194 silly cache add   scope: null,
+194 silly cache add   escapedName: 'inherits',
+194 silly cache add   name: 'inherits',
+194 silly cache add   rawSpec: '~2.0.3',
+194 silly cache add   spec: '>=2.0.3 <2.1.0',
+194 silly cache add   type: 'range' }
+195 silly addNamed inherits@>=2.0.3 <2.1.0
+196 verbose addNamed ">=2.0.3 <2.1.0" is a valid semver range for inherits
+197 silly addNameRange { name: 'inherits', range: '>=2.0.3 <2.1.0', hasData: false }
+198 silly mapToRegistry name inherits
+199 silly mapToRegistry using default registry
+200 silly mapToRegistry registry https://registry.npmjs.org/
+201 silly mapToRegistry data Result {
+201 silly mapToRegistry   raw: 'inherits',
+201 silly mapToRegistry   scope: null,
+201 silly mapToRegistry   escapedName: 'inherits',
+201 silly mapToRegistry   name: 'inherits',
+201 silly mapToRegistry   rawSpec: '',
+201 silly mapToRegistry   spec: 'latest',
+201 silly mapToRegistry   type: 'tag' }
+202 silly mapToRegistry uri https://registry.npmjs.org/inherits
+203 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+204 verbose get https://registry.npmjs.org/inherits not expired, no request
+205 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.3 <2.1.0', hasData: true }
+206 silly addNameRange versions [ 'inherits',
+206 silly addNameRange   [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2', '2.0.3', '2.0.4' ] ]
+207 silly pickManifestFromRegistryMetadata spec >=2.0.3 <2.1.0 tag latest versions [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2', '2.0.3', '2.0.4' ]
+208 silly addNamed inherits@latest
+209 verbose addNamed "latest" is being treated as a dist-tag for inherits
+210 info addNameTag [ 'inherits', 'latest' ]
+211 silly mapToRegistry name inherits
+212 silly mapToRegistry using default registry
+213 silly mapToRegistry registry https://registry.npmjs.org/
+214 silly mapToRegistry data Result {
+214 silly mapToRegistry   raw: 'inherits',
+214 silly mapToRegistry   scope: null,
+214 silly mapToRegistry   escapedName: 'inherits',
+214 silly mapToRegistry   name: 'inherits',
+214 silly mapToRegistry   rawSpec: '',
+214 silly mapToRegistry   spec: 'latest',
+214 silly mapToRegistry   type: 'tag' }
+215 silly mapToRegistry uri https://registry.npmjs.org/inherits
+216 verbose addNameTag registry:https://registry.npmjs.org/inherits already in flight; waiting
+217 silly addNameTag next cb for inherits with tag latest
+218 silly addNamed inherits@2.0.4
+219 verbose addNamed "2.0.4" is a plain semver version for inherits
+220 silly cache afterAdd inherits@2.0.4
+221 verbose afterAdd /Users/jamessangalli/.npm/inherits/2.0.4/package/package.json not in flight; writing
+222 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+223 verbose afterAdd /Users/jamessangalli/.npm/inherits/2.0.4/package/package.json written
+224 http 304 https://registry.npmjs.org/process-nextick-args
+225 verbose headers { date: 'Wed, 02 Jun 2021 05:05:45 GMT',
+225 verbose headers   connection: 'keep-alive',
+225 verbose headers   'cf-ray': '658e260328e6a43f-AKL',
+225 verbose headers   age: '4321',
+225 verbose headers   'cache-control': 'public, max-age=300',
+225 verbose headers   etag: '"58d0a4cf2900b1705718975f98323cbd"',
+225 verbose headers   'last-modified': 'Wed, 19 Jun 2019 20:34:45 GMT',
+225 verbose headers   vary: 'Accept-Encoding',
+225 verbose headers   'cf-cache-status': 'HIT',
+225 verbose headers   'cf-request-id': '0a6cb615fc0000a43f11273000000001',
+225 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+225 verbose headers   server: 'cloudflare' }
+226 silly get cb [ 304,
+226 silly get   { date: 'Wed, 02 Jun 2021 05:05:45 GMT',
+226 silly get     connection: 'keep-alive',
+226 silly get     'cf-ray': '658e260328e6a43f-AKL',
+226 silly get     age: '4321',
+226 silly get     'cache-control': 'public, max-age=300',
+226 silly get     etag: '"58d0a4cf2900b1705718975f98323cbd"',
+226 silly get     'last-modified': 'Wed, 19 Jun 2019 20:34:45 GMT',
+226 silly get     vary: 'Accept-Encoding',
+226 silly get     'cf-cache-status': 'HIT',
+226 silly get     'cf-request-id': '0a6cb615fc0000a43f11273000000001',
+226 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+226 silly get     server: 'cloudflare' } ]
+227 verbose etag https://registry.npmjs.org/process-nextick-args from cache
+228 verbose get saving process-nextick-args to /Users/jamessangalli/.npm/registry.npmjs.org/process-nextick-args/.cache.json
+229 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+230 http 304 https://registry.npmjs.org/safe-buffer
+231 verbose headers { date: 'Wed, 02 Jun 2021 05:05:45 GMT',
+231 verbose headers   connection: 'keep-alive',
+231 verbose headers   'cf-ray': '658e260328a0fb98-AKL',
+231 verbose headers   age: '5767',
+231 verbose headers   'cache-control': 'public, max-age=300',
+231 verbose headers   etag: '"7d10eeac57e4baa4c8bd0dd7caa1703c"',
+231 verbose headers   'last-modified': 'Sun, 10 May 2020 16:37:34 GMT',
+231 verbose headers   vary: 'Accept-Encoding',
+231 verbose headers   'cf-cache-status': 'HIT',
+231 verbose headers   'cf-request-id': '0a6cb615fb0000fb988e9b3000000001',
+231 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+231 verbose headers   server: 'cloudflare' }
+232 silly get cb [ 304,
+232 silly get   { date: 'Wed, 02 Jun 2021 05:05:45 GMT',
+232 silly get     connection: 'keep-alive',
+232 silly get     'cf-ray': '658e260328a0fb98-AKL',
+232 silly get     age: '5767',
+232 silly get     'cache-control': 'public, max-age=300',
+232 silly get     etag: '"7d10eeac57e4baa4c8bd0dd7caa1703c"',
+232 silly get     'last-modified': 'Sun, 10 May 2020 16:37:34 GMT',
+232 silly get     vary: 'Accept-Encoding',
+232 silly get     'cf-cache-status': 'HIT',
+232 silly get     'cf-request-id': '0a6cb615fb0000fb988e9b3000000001',
+232 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+232 silly get     server: 'cloudflare' } ]
+233 verbose etag https://registry.npmjs.org/safe-buffer from cache
+234 verbose get saving safe-buffer to /Users/jamessangalli/.npm/registry.npmjs.org/safe-buffer/.cache.json
+235 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+236 silly pickManifestFromRegistryMetadata spec >=2.0.0 <2.1.0 tag latest versions [ '1.0.0',
+236 silly pickManifestFromRegistryMetadata   '1.0.1',
+236 silly pickManifestFromRegistryMetadata   '1.0.2',
+236 silly pickManifestFromRegistryMetadata   '1.0.3',
+236 silly pickManifestFromRegistryMetadata   '1.0.4',
+236 silly pickManifestFromRegistryMetadata   '1.0.5',
+236 silly pickManifestFromRegistryMetadata   '1.0.6',
+236 silly pickManifestFromRegistryMetadata   '1.0.7',
+236 silly pickManifestFromRegistryMetadata   '2.0.0',
+236 silly pickManifestFromRegistryMetadata   '2.0.1' ]
+237 silly resolveWithNewModule process-nextick-args@2.0.1 checking installable status
+238 silly cache add args [ 'process-nextick-args@~2.0.0', null ]
+239 verbose cache add spec process-nextick-args@~2.0.0
+240 silly cache add parsed spec Result {
+240 silly cache add   raw: 'process-nextick-args@~2.0.0',
+240 silly cache add   scope: null,
+240 silly cache add   escapedName: 'process-nextick-args',
+240 silly cache add   name: 'process-nextick-args',
+240 silly cache add   rawSpec: '~2.0.0',
+240 silly cache add   spec: '>=2.0.0 <2.1.0',
+240 silly cache add   type: 'range' }
+241 silly addNamed process-nextick-args@>=2.0.0 <2.1.0
+242 verbose addNamed ">=2.0.0 <2.1.0" is a valid semver range for process-nextick-args
+243 silly addNameRange { name: 'process-nextick-args',
+243 silly addNameRange   range: '>=2.0.0 <2.1.0',
+243 silly addNameRange   hasData: false }
+244 silly mapToRegistry name process-nextick-args
+245 silly mapToRegistry using default registry
+246 silly mapToRegistry registry https://registry.npmjs.org/
+247 silly mapToRegistry data Result {
+247 silly mapToRegistry   raw: 'process-nextick-args',
+247 silly mapToRegistry   scope: null,
+247 silly mapToRegistry   escapedName: 'process-nextick-args',
+247 silly mapToRegistry   name: 'process-nextick-args',
+247 silly mapToRegistry   rawSpec: '',
+247 silly mapToRegistry   spec: 'latest',
+247 silly mapToRegistry   type: 'tag' }
+248 silly mapToRegistry uri https://registry.npmjs.org/process-nextick-args
+249 verbose addNameRange registry:https://registry.npmjs.org/process-nextick-args not in flight; fetching
+250 verbose get https://registry.npmjs.org/process-nextick-args not expired, no request
+251 silly addNameRange number 2 { name: 'process-nextick-args',
+251 silly addNameRange   range: '>=2.0.0 <2.1.0',
+251 silly addNameRange   hasData: true }
+252 silly addNameRange versions [ 'process-nextick-args',
+252 silly addNameRange   [ '1.0.0',
+252 silly addNameRange     '1.0.1',
+252 silly addNameRange     '1.0.2',
+252 silly addNameRange     '1.0.3',
+252 silly addNameRange     '1.0.4',
+252 silly addNameRange     '1.0.5',
+252 silly addNameRange     '1.0.6',
+252 silly addNameRange     '1.0.7',
+252 silly addNameRange     '2.0.0',
+252 silly addNameRange     '2.0.1' ] ]
+253 silly pickManifestFromRegistryMetadata spec >=2.0.0 <2.1.0 tag latest versions [ '1.0.0',
+253 silly pickManifestFromRegistryMetadata   '1.0.1',
+253 silly pickManifestFromRegistryMetadata   '1.0.2',
+253 silly pickManifestFromRegistryMetadata   '1.0.3',
+253 silly pickManifestFromRegistryMetadata   '1.0.4',
+253 silly pickManifestFromRegistryMetadata   '1.0.5',
+253 silly pickManifestFromRegistryMetadata   '1.0.6',
+253 silly pickManifestFromRegistryMetadata   '1.0.7',
+253 silly pickManifestFromRegistryMetadata   '2.0.0',
+253 silly pickManifestFromRegistryMetadata   '2.0.1' ]
+254 silly addNamed process-nextick-args@latest
+255 verbose addNamed "latest" is being treated as a dist-tag for process-nextick-args
+256 info addNameTag [ 'process-nextick-args', 'latest' ]
+257 silly mapToRegistry name process-nextick-args
+258 silly mapToRegistry using default registry
+259 silly mapToRegistry registry https://registry.npmjs.org/
+260 silly mapToRegistry data Result {
+260 silly mapToRegistry   raw: 'process-nextick-args',
+260 silly mapToRegistry   scope: null,
+260 silly mapToRegistry   escapedName: 'process-nextick-args',
+260 silly mapToRegistry   name: 'process-nextick-args',
+260 silly mapToRegistry   rawSpec: '',
+260 silly mapToRegistry   spec: 'latest',
+260 silly mapToRegistry   type: 'tag' }
+261 silly mapToRegistry uri https://registry.npmjs.org/process-nextick-args
+262 verbose addNameTag registry:https://registry.npmjs.org/process-nextick-args already in flight; waiting
+263 silly addNameTag next cb for process-nextick-args with tag latest
+264 silly addNamed process-nextick-args@2.0.1
+265 verbose addNamed "2.0.1" is a plain semver version for process-nextick-args
+266 silly cache afterAdd process-nextick-args@2.0.1
+267 verbose afterAdd /Users/jamessangalli/.npm/process-nextick-args/2.0.1/package/package.json not in flight; writing
+268 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+269 silly pickManifestFromRegistryMetadata spec >=5.1.1 <5.2.0 tag latest versions [ '1.0.0',
+269 silly pickManifestFromRegistryMetadata   '2.0.0',
+269 silly pickManifestFromRegistryMetadata   '3.0.0',
+269 silly pickManifestFromRegistryMetadata   '4.0.0',
+269 silly pickManifestFromRegistryMetadata   '5.0.0',
+269 silly pickManifestFromRegistryMetadata   '5.0.1',
+269 silly pickManifestFromRegistryMetadata   '5.1.0',
+269 silly pickManifestFromRegistryMetadata   '5.1.1',
+269 silly pickManifestFromRegistryMetadata   '5.1.2',
+269 silly pickManifestFromRegistryMetadata   '5.2.0',
+269 silly pickManifestFromRegistryMetadata   '5.2.1' ]
+270 silly resolveWithNewModule safe-buffer@5.1.2 checking installable status
+271 silly cache add args [ 'safe-buffer@~5.1.1', null ]
+272 verbose cache add spec safe-buffer@~5.1.1
+273 silly cache add parsed spec Result {
+273 silly cache add   raw: 'safe-buffer@~5.1.1',
+273 silly cache add   scope: null,
+273 silly cache add   escapedName: 'safe-buffer',
+273 silly cache add   name: 'safe-buffer',
+273 silly cache add   rawSpec: '~5.1.1',
+273 silly cache add   spec: '>=5.1.1 <5.2.0',
+273 silly cache add   type: 'range' }
+274 silly addNamed safe-buffer@>=5.1.1 <5.2.0
+275 verbose addNamed ">=5.1.1 <5.2.0" is a valid semver range for safe-buffer
+276 silly addNameRange { name: 'safe-buffer', range: '>=5.1.1 <5.2.0', hasData: false }
+277 silly mapToRegistry name safe-buffer
+278 silly mapToRegistry using default registry
+279 silly mapToRegistry registry https://registry.npmjs.org/
+280 silly mapToRegistry data Result {
+280 silly mapToRegistry   raw: 'safe-buffer',
+280 silly mapToRegistry   scope: null,
+280 silly mapToRegistry   escapedName: 'safe-buffer',
+280 silly mapToRegistry   name: 'safe-buffer',
+280 silly mapToRegistry   rawSpec: '',
+280 silly mapToRegistry   spec: 'latest',
+280 silly mapToRegistry   type: 'tag' }
+281 silly mapToRegistry uri https://registry.npmjs.org/safe-buffer
+282 verbose addNameRange registry:https://registry.npmjs.org/safe-buffer not in flight; fetching
+283 verbose get https://registry.npmjs.org/safe-buffer not expired, no request
+284 silly addNameRange number 2 { name: 'safe-buffer', range: '>=5.1.1 <5.2.0', hasData: true }
+285 silly addNameRange versions [ 'safe-buffer',
+285 silly addNameRange   [ '1.0.0',
+285 silly addNameRange     '2.0.0',
+285 silly addNameRange     '3.0.0',
+285 silly addNameRange     '4.0.0',
+285 silly addNameRange     '5.0.0',
+285 silly addNameRange     '5.0.1',
+285 silly addNameRange     '5.1.0',
+285 silly addNameRange     '5.1.1',
+285 silly addNameRange     '5.1.2',
+285 silly addNameRange     '5.2.0',
+285 silly addNameRange     '5.2.1' ] ]
+286 silly pickManifestFromRegistryMetadata spec >=5.1.1 <5.2.0 tag latest versions [ '1.0.0',
+286 silly pickManifestFromRegistryMetadata   '2.0.0',
+286 silly pickManifestFromRegistryMetadata   '3.0.0',
+286 silly pickManifestFromRegistryMetadata   '4.0.0',
+286 silly pickManifestFromRegistryMetadata   '5.0.0',
+286 silly pickManifestFromRegistryMetadata   '5.0.1',
+286 silly pickManifestFromRegistryMetadata   '5.1.0',
+286 silly pickManifestFromRegistryMetadata   '5.1.1',
+286 silly pickManifestFromRegistryMetadata   '5.1.2',
+286 silly pickManifestFromRegistryMetadata   '5.2.0',
+286 silly pickManifestFromRegistryMetadata   '5.2.1' ]
+287 silly addNamed safe-buffer@5.1.2
+288 verbose addNamed "5.1.2" is a plain semver version for safe-buffer
+289 verbose afterAdd /Users/jamessangalli/.npm/process-nextick-args/2.0.1/package/package.json written
+290 silly cache afterAdd safe-buffer@5.1.2
+291 verbose afterAdd /Users/jamessangalli/.npm/safe-buffer/5.1.2/package/package.json not in flight; writing
+292 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+293 verbose afterAdd /Users/jamessangalli/.npm/safe-buffer/5.1.2/package/package.json written
+294 http 304 https://registry.npmjs.org/string_decoder
+295 verbose headers { date: 'Wed, 02 Jun 2021 05:05:46 GMT',
+295 verbose headers   connection: 'keep-alive',
+295 verbose headers   'cf-ray': '658e26032a11fb7c-AKL',
+295 verbose headers   'cache-control': 'public, max-age=300',
+295 verbose headers   etag: '"0a93d953e853f8bf50ba2c73d36557a6"',
+295 verbose headers   'last-modified': 'Wed, 07 Aug 2019 09:20:40 GMT',
+295 verbose headers   vary: 'Accept-Encoding',
+295 verbose headers   'cf-cache-status': 'REVALIDATED',
+295 verbose headers   'cf-request-id': '0a6cb615fb0000fb7c75213000000001',
+295 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+295 verbose headers   server: 'cloudflare' }
+296 silly get cb [ 304,
+296 silly get   { date: 'Wed, 02 Jun 2021 05:05:46 GMT',
+296 silly get     connection: 'keep-alive',
+296 silly get     'cf-ray': '658e26032a11fb7c-AKL',
+296 silly get     'cache-control': 'public, max-age=300',
+296 silly get     etag: '"0a93d953e853f8bf50ba2c73d36557a6"',
+296 silly get     'last-modified': 'Wed, 07 Aug 2019 09:20:40 GMT',
+296 silly get     vary: 'Accept-Encoding',
+296 silly get     'cf-cache-status': 'REVALIDATED',
+296 silly get     'cf-request-id': '0a6cb615fb0000fb7c75213000000001',
+296 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+296 silly get     server: 'cloudflare' } ]
+297 verbose etag https://registry.npmjs.org/string_decoder from cache
+298 verbose get saving string_decoder to /Users/jamessangalli/.npm/registry.npmjs.org/string_decoder/.cache.json
+299 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+300 silly pickManifestFromRegistryMetadata spec >=1.1.0 <1.2.0 tag latest versions [ '0.0.0',
+300 silly pickManifestFromRegistryMetadata   '0.0.1',
+300 silly pickManifestFromRegistryMetadata   '0.10.24',
+300 silly pickManifestFromRegistryMetadata   '0.11.10',
+300 silly pickManifestFromRegistryMetadata   '0.10.25',
+300 silly pickManifestFromRegistryMetadata   '0.11.10-1',
+300 silly pickManifestFromRegistryMetadata   '0.10.25-1',
+300 silly pickManifestFromRegistryMetadata   '0.10.31',
+300 silly pickManifestFromRegistryMetadata   '1.0.0',
+300 silly pickManifestFromRegistryMetadata   '1.0.1',
+300 silly pickManifestFromRegistryMetadata   '1.0.2',
+300 silly pickManifestFromRegistryMetadata   '1.0.3',
+300 silly pickManifestFromRegistryMetadata   '1.1.0',
+300 silly pickManifestFromRegistryMetadata   '1.1.1',
+300 silly pickManifestFromRegistryMetadata   '1.2.0',
+300 silly pickManifestFromRegistryMetadata   '1.3.0' ]
+301 silly resolveWithNewModule string_decoder@1.1.1 checking installable status
+302 silly cache add args [ 'string_decoder@~1.1.0', null ]
+303 verbose cache add spec string_decoder@~1.1.0
+304 silly cache add parsed spec Result {
+304 silly cache add   raw: 'string_decoder@~1.1.0',
+304 silly cache add   scope: null,
+304 silly cache add   escapedName: 'string_decoder',
+304 silly cache add   name: 'string_decoder',
+304 silly cache add   rawSpec: '~1.1.0',
+304 silly cache add   spec: '>=1.1.0 <1.2.0',
+304 silly cache add   type: 'range' }
+305 silly addNamed string_decoder@>=1.1.0 <1.2.0
+306 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for string_decoder
+307 silly addNameRange { name: 'string_decoder',
+307 silly addNameRange   range: '>=1.1.0 <1.2.0',
+307 silly addNameRange   hasData: false }
+308 silly mapToRegistry name string_decoder
+309 silly mapToRegistry using default registry
+310 silly mapToRegistry registry https://registry.npmjs.org/
+311 silly mapToRegistry data Result {
+311 silly mapToRegistry   raw: 'string_decoder',
+311 silly mapToRegistry   scope: null,
+311 silly mapToRegistry   escapedName: 'string_decoder',
+311 silly mapToRegistry   name: 'string_decoder',
+311 silly mapToRegistry   rawSpec: '',
+311 silly mapToRegistry   spec: 'latest',
+311 silly mapToRegistry   type: 'tag' }
+312 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+313 verbose addNameRange registry:https://registry.npmjs.org/string_decoder not in flight; fetching
+314 verbose get https://registry.npmjs.org/string_decoder not expired, no request
+315 silly addNameRange number 2 { name: 'string_decoder',
+315 silly addNameRange   range: '>=1.1.0 <1.2.0',
+315 silly addNameRange   hasData: true }
+316 silly addNameRange versions [ 'string_decoder',
+316 silly addNameRange   [ '0.0.0',
+316 silly addNameRange     '0.0.1',
+316 silly addNameRange     '0.10.24',
+316 silly addNameRange     '0.11.10',
+316 silly addNameRange     '0.10.25',
+316 silly addNameRange     '0.11.10-1',
+316 silly addNameRange     '0.10.25-1',
+316 silly addNameRange     '0.10.31',
+316 silly addNameRange     '1.0.0',
+316 silly addNameRange     '1.0.1',
+316 silly addNameRange     '1.0.2',
+316 silly addNameRange     '1.0.3',
+316 silly addNameRange     '1.1.0',
+316 silly addNameRange     '1.1.1',
+316 silly addNameRange     '1.2.0',
+316 silly addNameRange     '1.3.0' ] ]
+317 silly pickManifestFromRegistryMetadata spec >=1.1.0 <1.2.0 tag latest versions [ '0.0.0',
+317 silly pickManifestFromRegistryMetadata   '0.0.1',
+317 silly pickManifestFromRegistryMetadata   '0.10.24',
+317 silly pickManifestFromRegistryMetadata   '0.11.10',
+317 silly pickManifestFromRegistryMetadata   '0.10.25',
+317 silly pickManifestFromRegistryMetadata   '0.11.10-1',
+317 silly pickManifestFromRegistryMetadata   '0.10.25-1',
+317 silly pickManifestFromRegistryMetadata   '0.10.31',
+317 silly pickManifestFromRegistryMetadata   '1.0.0',
+317 silly pickManifestFromRegistryMetadata   '1.0.1',
+317 silly pickManifestFromRegistryMetadata   '1.0.2',
+317 silly pickManifestFromRegistryMetadata   '1.0.3',
+317 silly pickManifestFromRegistryMetadata   '1.1.0',
+317 silly pickManifestFromRegistryMetadata   '1.1.1',
+317 silly pickManifestFromRegistryMetadata   '1.2.0',
+317 silly pickManifestFromRegistryMetadata   '1.3.0' ]
+318 silly addNamed string_decoder@1.1.1
+319 verbose addNamed "1.1.1" is a plain semver version for string_decoder
+320 silly cache afterAdd string_decoder@1.1.1
+321 verbose afterAdd /Users/jamessangalli/.npm/string_decoder/1.1.1/package/package.json not in flight; writing
+322 verbose correctMkdir /Users/jamessangalli/.npm correctMkdir not in flight; initializing
+323 verbose afterAdd /Users/jamessangalli/.npm/string_decoder/1.1.1/package/package.json written
+324 silly loadAllDepsIntoIdealTree Finishing
+325 silly loadIdealTree Finishing
+326 silly currentTree bitcoinprojects@1.0.0
+326 silly currentTree ├── ansi-regex@2.1.1
+326 silly currentTree ├── ansi-styles@2.2.1
+326 silly currentTree ├── array-union@1.0.2
+326 silly currentTree ├── array-uniq@1.0.3
+326 silly currentTree ├── async@2.6.3
+326 silly currentTree ├── babel-code-frame@6.26.0
+326 silly currentTree ├── babel-helper-call-delegate@6.24.1
+326 silly currentTree ├── babel-helper-define-map@6.26.0
+326 silly currentTree ├── babel-helper-function-name@6.24.1
+326 silly currentTree ├── babel-helper-get-function-arity@6.24.1
+326 silly currentTree ├── babel-helper-hoist-variables@6.24.1
+326 silly currentTree ├── babel-helper-optimise-call-expression@6.24.1
+326 silly currentTree ├── babel-helper-regex@6.26.0
+326 silly currentTree ├── babel-helper-replace-supers@6.24.1
+326 silly currentTree ├── babel-messages@6.23.0
+326 silly currentTree ├── babel-plugin-check-es2015-constants@6.22.0
+326 silly currentTree ├── babel-plugin-syntax-async-functions@6.13.0
+326 silly currentTree ├── babel-plugin-syntax-async-generators@6.13.0
+326 silly currentTree ├── babel-plugin-syntax-flow@6.18.0
+326 silly currentTree ├── babel-plugin-syntax-object-rest-spread@6.13.0
+326 silly currentTree ├── babel-plugin-syntax-trailing-function-commas@6.22.0
+326 silly currentTree ├── babel-plugin-transform-es2015-arrow-functions@6.22.0
+326 silly currentTree ├── babel-plugin-transform-es2015-block-scoped-functions@6.22.0
+326 silly currentTree ├── babel-plugin-transform-es2015-block-scoping@6.26.0
+326 silly currentTree ├── babel-plugin-transform-es2015-classes@6.24.1
+326 silly currentTree ├── babel-plugin-transform-es2015-computed-properties@6.24.1
+326 silly currentTree ├── babel-plugin-transform-es2015-destructuring@6.23.0
+326 silly currentTree ├── babel-plugin-transform-es2015-for-of@6.23.0
+326 silly currentTree ├── babel-plugin-transform-es2015-literals@6.22.0
+326 silly currentTree ├── babel-plugin-transform-es2015-object-super@6.24.1
+326 silly currentTree ├── babel-plugin-transform-es2015-parameters@6.24.1
+326 silly currentTree ├── babel-plugin-transform-es2015-shorthand-properties@6.24.1
+326 silly currentTree ├── babel-plugin-transform-es2015-spread@6.22.0
+326 silly currentTree ├── babel-plugin-transform-es2015-sticky-regex@6.24.1
+326 silly currentTree ├── babel-plugin-transform-es2015-template-literals@6.22.0
+326 silly currentTree ├── babel-plugin-transform-es2015-typeof-symbol@6.23.0
+326 silly currentTree ├── babel-plugin-transform-es2015-unicode-regex@6.24.1
+326 silly currentTree ├── babel-plugin-transform-es3-property-literals@6.22.0
+326 silly currentTree ├── babel-plugin-transform-flow-strip-types@6.22.0
+326 silly currentTree ├── babel-plugin-transform-object-rest-spread@6.26.0
+326 silly currentTree ├── babel-plugin-transform-regenerator@6.26.0
+326 silly currentTree ├── babel-preset-meteor@6.26.1
+326 silly currentTree ├── babel-runtime@6.26.0
+326 silly currentTree ├── babel-template@6.26.0
+326 silly currentTree ├─┬ babel-traverse@6.26.0
+326 silly currentTree │ ├── debug@2.6.9
+326 silly currentTree │ └── ms@2.0.0
+326 silly currentTree ├── babel-types@6.26.0
+326 silly currentTree ├── babylon@6.18.0
+326 silly currentTree ├── balanced-match@1.0.2
+326 silly currentTree ├── brace-expansion@1.1.11
+326 silly currentTree ├── chalk@1.1.3
+326 silly currentTree ├── commander@2.20.3
+326 silly currentTree ├── commondir@1.0.1
+326 silly currentTree ├── concat-map@0.0.1
+326 silly currentTree ├── core-js@2.6.11
+326 silly currentTree ├── core-util-is@1.0.2
+326 silly currentTree ├── email-addresses@3.1.0
+326 silly currentTree ├── escape-string-regexp@1.0.5
+326 silly currentTree ├── esutils@2.0.3
+326 silly currentTree ├── filename-reserved-regex@1.0.0
+326 silly currentTree ├── filenamify-url@1.0.0
+326 silly currentTree ├── filenamify@1.2.1
+326 silly currentTree ├── find-cache-dir@3.3.1
+326 silly currentTree ├── find-up@4.1.0
+326 silly currentTree ├── fs-extra@8.1.0
+326 silly currentTree ├── fs.realpath@1.0.0
+326 silly currentTree ├── gh-pages@3.2.0
+326 silly currentTree ├── glob@7.1.7
+326 silly currentTree ├── globals@9.18.0
+326 silly currentTree ├── globby@6.1.0
+326 silly currentTree ├── graceful-fs@4.2.6
+326 silly currentTree ├── has-ansi@2.0.0
+326 silly currentTree ├── humanize-url@1.0.1
+326 silly currentTree ├── inflight@1.0.6
+326 silly currentTree ├── inherits@2.0.4
+326 silly currentTree ├── invariant@2.2.4
+326 silly currentTree ├── is-plain-obj@1.1.0
+326 silly currentTree ├── js-tokens@3.0.2
+326 silly currentTree ├── jsesc@0.5.0
+326 silly currentTree ├── jsonfile@4.0.0
+326 silly currentTree ├── locate-path@5.0.0
+326 silly currentTree ├── lodash@4.17.20
+326 silly currentTree ├── loose-envify@1.4.0
+326 silly currentTree ├── make-dir@3.1.0
+326 silly currentTree ├─┬ meteor-node-stubs@0.2.11
+326 silly currentTree │ ├── asn1.js@4.9.0
+326 silly currentTree │ ├── assert@1.4.1
+326 silly currentTree │ ├── balanced-match@0.4.2
+326 silly currentTree │ ├── base64-js@1.2.0
+326 silly currentTree │ ├── Base64@0.2.1
+326 silly currentTree │ ├── bn.js@4.11.6
+326 silly currentTree │ ├── brace-expansion@1.1.7
+326 silly currentTree │ ├── brorand@1.0.6
+326 silly currentTree │ ├── browserify-aes@1.0.6
+326 silly currentTree │ ├── browserify-cipher@1.0.0
+326 silly currentTree │ ├── browserify-des@1.0.0
+326 silly currentTree │ ├── browserify-rsa@4.0.1
+326 silly currentTree │ ├── browserify-sign@4.0.0
+326 silly currentTree │ ├── browserify-zlib@0.1.4
+326 silly currentTree │ ├── buffer-xor@1.0.3
+326 silly currentTree │ ├── buffer@4.9.1
+326 silly currentTree │ ├── cipher-base@1.0.3
+326 silly currentTree │ ├── concat-map@0.0.1
+326 silly currentTree │ ├── console-browserify@1.1.0
+326 silly currentTree │ ├── constants-browserify@1.0.0
+326 silly currentTree │ ├── create-ecdh@4.0.0
+326 silly currentTree │ ├── create-hash@1.1.2
+326 silly currentTree │ ├── create-hmac@1.1.4
+326 silly currentTree │ ├── crypto-browserify@3.11.0
+326 silly currentTree │ ├── date-now@0.1.4
+326 silly currentTree │ ├── des.js@1.0.0
+326 silly currentTree │ ├── diffie-hellman@5.0.2
+326 silly currentTree │ ├── domain-browser@1.1.7
+326 silly currentTree │ ├── elliptic@6.3.2
+326 silly currentTree │ ├── events@1.1.1
+326 silly currentTree │ ├── evp_bytestokey@1.0.0
+326 silly currentTree │ ├── fs.realpath@1.0.0
+326 silly currentTree │ ├── glob@7.1.2
+326 silly currentTree │ ├── hash.js@1.0.3
+326 silly currentTree │ ├── http-browserify@1.7.0
+326 silly currentTree │ ├── https-browserify@0.0.1
+326 silly currentTree │ ├── ieee754@1.1.8
+326 silly currentTree │ ├── indexof@0.0.1
+326 silly currentTree │ ├── inflight@1.0.6
+326 silly currentTree │ ├── inherits@2.0.1
+326 silly currentTree │ ├── isarray@1.0.0
+326 silly currentTree │ ├── miller-rabin@4.0.0
+326 silly currentTree │ ├── minimalistic-assert@1.0.0
+326 silly currentTree │ ├── minimatch@3.0.4
+326 silly currentTree │ ├── once@1.4.0
+326 silly currentTree │ ├── os-browserify@0.2.1
+326 silly currentTree │ ├── pako@0.2.9
+326 silly currentTree │ ├── parse-asn1@5.0.0
+326 silly currentTree │ ├── path-browserify@0.0.0
+326 silly currentTree │ ├── path-is-absolute@1.0.1
+326 silly currentTree │ ├── pbkdf2@3.0.9
+326 silly currentTree │ ├── process-nextick-args@1.0.7
+326 silly currentTree │ ├── process@0.11.9
+326 silly currentTree │ ├── public-encrypt@4.0.0
+326 silly currentTree │ ├── punycode@1.4.1
+326 silly currentTree │ ├── querystring-es3@0.2.1
+326 silly currentTree │ ├── querystring@0.2.0
+326 silly currentTree │ ├── randombytes@2.0.3
+326 silly currentTree │ ├── readable-stream@2.3.5
+326 silly currentTree │ ├── rimraf@2.6.1
+326 silly currentTree │ ├── ripemd160@1.0.1
+326 silly currentTree │ ├── safe-buffer@5.0.1
+326 silly currentTree │ ├── sha.js@2.4.8
+326 silly currentTree │ ├─┬ stream-browserify@2.0.1
+326 silly currentTree │ │ ├── process-nextick-args@2.0.1
+326 silly currentTree │ │ ├─┬ readable-stream@2.3.7
+326 silly currentTree │ │ │ └── inherits@2.0.4
+326 silly currentTree │ │ ├── safe-buffer@5.1.2
+326 silly currentTree │ │ └── string_decoder@1.1.1
+326 silly currentTree │ ├── string_decoder@1.0.1
+326 silly currentTree │ ├── timers-browserify@1.4.2
+326 silly currentTree │ ├── tty-browserify@0.0.0
+326 silly currentTree │ ├─┬ url@0.11.0
+326 silly currentTree │ │ └── punycode@1.3.2
+326 silly currentTree │ ├── util-deprecate@1.0.2
+326 silly currentTree │ ├── util@0.10.3
+326 silly currentTree │ ├── vm-browserify@0.0.4
+326 silly currentTree │ └── wrappy@1.0.2
+326 silly currentTree ├── minimatch@3.0.4
+326 silly currentTree ├── normalize-url@1.9.1
+326 silly currentTree ├── object-assign@4.1.1
+326 silly currentTree ├── once@1.4.0
+326 silly currentTree ├── p-limit@2.3.0
+326 silly currentTree ├── p-locate@4.1.0
+326 silly currentTree ├── p-try@2.2.0
+326 silly currentTree ├── path-exists@4.0.0
+326 silly currentTree ├── path-is-absolute@1.0.1
+326 silly currentTree ├── pify@2.3.0
+326 silly currentTree ├── pinkie-promise@2.0.1
+326 silly currentTree ├── pinkie@2.0.4
+326 silly currentTree ├── pkg-dir@4.2.0
+326 silly currentTree ├── prepend-http@1.0.4
+326 silly currentTree ├── private@0.1.8
+326 silly currentTree ├── query-string@4.3.4
+326 silly currentTree ├── regenerate@1.4.1
+326 silly currentTree ├── regenerator-runtime@0.11.1
+326 silly currentTree ├── regenerator-transform@0.10.1
+326 silly currentTree ├── regexpu-core@2.0.0
+326 silly currentTree ├── regjsgen@0.2.0
+326 silly currentTree ├── regjsparser@0.1.5
+326 silly currentTree ├── semver@6.3.0
+326 silly currentTree ├── sort-keys@1.1.2
+326 silly currentTree ├── strict-uri-encode@1.1.0
+326 silly currentTree ├── strip-ansi@3.0.1
+326 silly currentTree ├── strip-outer@1.0.1
+326 silly currentTree ├── strip-url-auth@1.0.1
+326 silly currentTree ├── supports-color@2.0.0
+326 silly currentTree ├── to-fast-properties@1.0.3
+326 silly currentTree ├── trim-repeated@1.0.0
+326 silly currentTree ├── universalify@0.1.2
+326 silly currentTree └── wrappy@1.0.2
+327 silly idealTree bitcoinprojects@1.0.0
+327 silly idealTree ├── ansi-regex@2.1.1
+327 silly idealTree ├── ansi-styles@2.2.1
+327 silly idealTree ├── array-union@1.0.2
+327 silly idealTree ├── array-uniq@1.0.3
+327 silly idealTree ├── async@2.6.3
+327 silly idealTree ├── babel-code-frame@6.26.0
+327 silly idealTree ├── babel-helper-call-delegate@6.24.1
+327 silly idealTree ├── babel-helper-define-map@6.26.0
+327 silly idealTree ├── babel-helper-function-name@6.24.1
+327 silly idealTree ├── babel-helper-get-function-arity@6.24.1
+327 silly idealTree ├── babel-helper-hoist-variables@6.24.1
+327 silly idealTree ├── babel-helper-optimise-call-expression@6.24.1
+327 silly idealTree ├── babel-helper-regex@6.26.0
+327 silly idealTree ├── babel-helper-replace-supers@6.24.1
+327 silly idealTree ├── babel-messages@6.23.0
+327 silly idealTree ├── babel-plugin-check-es2015-constants@6.22.0
+327 silly idealTree ├── babel-plugin-syntax-async-functions@6.13.0
+327 silly idealTree ├── babel-plugin-syntax-async-generators@6.13.0
+327 silly idealTree ├── babel-plugin-syntax-flow@6.18.0
+327 silly idealTree ├── babel-plugin-syntax-object-rest-spread@6.13.0
+327 silly idealTree ├── babel-plugin-syntax-trailing-function-commas@6.22.0
+327 silly idealTree ├── babel-plugin-transform-es2015-arrow-functions@6.22.0
+327 silly idealTree ├── babel-plugin-transform-es2015-block-scoped-functions@6.22.0
+327 silly idealTree ├── babel-plugin-transform-es2015-block-scoping@6.26.0
+327 silly idealTree ├── babel-plugin-transform-es2015-classes@6.24.1
+327 silly idealTree ├── babel-plugin-transform-es2015-computed-properties@6.24.1
+327 silly idealTree ├── babel-plugin-transform-es2015-destructuring@6.23.0
+327 silly idealTree ├── babel-plugin-transform-es2015-for-of@6.23.0
+327 silly idealTree ├── babel-plugin-transform-es2015-literals@6.22.0
+327 silly idealTree ├── babel-plugin-transform-es2015-object-super@6.24.1
+327 silly idealTree ├── babel-plugin-transform-es2015-parameters@6.24.1
+327 silly idealTree ├── babel-plugin-transform-es2015-shorthand-properties@6.24.1
+327 silly idealTree ├── babel-plugin-transform-es2015-spread@6.22.0
+327 silly idealTree ├── babel-plugin-transform-es2015-sticky-regex@6.24.1
+327 silly idealTree ├── babel-plugin-transform-es2015-template-literals@6.22.0
+327 silly idealTree ├── babel-plugin-transform-es2015-typeof-symbol@6.23.0
+327 silly idealTree ├── babel-plugin-transform-es2015-unicode-regex@6.24.1
+327 silly idealTree ├── babel-plugin-transform-es3-property-literals@6.22.0
+327 silly idealTree ├── babel-plugin-transform-flow-strip-types@6.22.0
+327 silly idealTree ├── babel-plugin-transform-object-rest-spread@6.26.0
+327 silly idealTree ├── babel-plugin-transform-regenerator@6.26.0
+327 silly idealTree ├── babel-preset-meteor@6.26.1
+327 silly idealTree ├── babel-runtime@6.26.0
+327 silly idealTree ├── babel-template@6.26.0
+327 silly idealTree ├─┬ babel-traverse@6.26.0
+327 silly idealTree │ ├── debug@2.6.9
+327 silly idealTree │ └── ms@2.0.0
+327 silly idealTree ├── babel-types@6.26.0
+327 silly idealTree ├── babylon@6.18.0
+327 silly idealTree ├── balanced-match@1.0.2
+327 silly idealTree ├── brace-expansion@1.1.11
+327 silly idealTree ├── chalk@1.1.3
+327 silly idealTree ├── commander@2.20.3
+327 silly idealTree ├── commondir@1.0.1
+327 silly idealTree ├── concat-map@0.0.1
+327 silly idealTree ├── core-js@2.6.11
+327 silly idealTree ├── core-util-is@1.0.2
+327 silly idealTree ├── detect-libc@1.0.3
+327 silly idealTree ├── email-addresses@3.1.0
+327 silly idealTree ├── escape-string-regexp@1.0.5
+327 silly idealTree ├── esutils@2.0.3
+327 silly idealTree ├── fibers@5.0.0
+327 silly idealTree ├── filename-reserved-regex@1.0.0
+327 silly idealTree ├── filenamify-url@1.0.0
+327 silly idealTree ├── filenamify@1.2.1
+327 silly idealTree ├── find-cache-dir@3.3.1
+327 silly idealTree ├── find-up@4.1.0
+327 silly idealTree ├── fs-extra@8.1.0
+327 silly idealTree ├── fs.realpath@1.0.0
+327 silly idealTree ├── gh-pages@3.2.0
+327 silly idealTree ├── glob@7.1.7
+327 silly idealTree ├── globals@9.18.0
+327 silly idealTree ├── globby@6.1.0
+327 silly idealTree ├── graceful-fs@4.2.6
+327 silly idealTree ├── has-ansi@2.0.0
+327 silly idealTree ├── humanize-url@1.0.1
+327 silly idealTree ├── inflight@1.0.6
+327 silly idealTree ├── inherits@2.0.4
+327 silly idealTree ├── invariant@2.2.4
+327 silly idealTree ├── is-plain-obj@1.1.0
+327 silly idealTree ├── js-tokens@3.0.2
+327 silly idealTree ├── jsesc@0.5.0
+327 silly idealTree ├── jsonfile@4.0.0
+327 silly idealTree ├── locate-path@5.0.0
+327 silly idealTree ├── lodash@4.17.20
+327 silly idealTree ├── loose-envify@1.4.0
+327 silly idealTree ├── make-dir@3.1.0
+327 silly idealTree ├─┬ meteor-node-stubs@0.2.11
+327 silly idealTree │ ├── asn1.js@4.9.0
+327 silly idealTree │ ├── assert@1.4.1
+327 silly idealTree │ ├── balanced-match@0.4.2
+327 silly idealTree │ ├── base64-js@1.2.0
+327 silly idealTree │ ├── Base64@0.2.1
+327 silly idealTree │ ├── bn.js@4.11.6
+327 silly idealTree │ ├── brace-expansion@1.1.7
+327 silly idealTree │ ├── brorand@1.0.6
+327 silly idealTree │ ├── browserify-aes@1.0.6
+327 silly idealTree │ ├── browserify-cipher@1.0.0
+327 silly idealTree │ ├── browserify-des@1.0.0
+327 silly idealTree │ ├── browserify-rsa@4.0.1
+327 silly idealTree │ ├── browserify-sign@4.0.0
+327 silly idealTree │ ├── browserify-zlib@0.1.4
+327 silly idealTree │ ├── buffer-xor@1.0.3
+327 silly idealTree │ ├── buffer@4.9.1
+327 silly idealTree │ ├── cipher-base@1.0.3
+327 silly idealTree │ ├── concat-map@0.0.1
+327 silly idealTree │ ├── console-browserify@1.1.0
+327 silly idealTree │ ├── constants-browserify@1.0.0
+327 silly idealTree │ ├── create-ecdh@4.0.0
+327 silly idealTree │ ├── create-hash@1.1.2
+327 silly idealTree │ ├── create-hmac@1.1.4
+327 silly idealTree │ ├── crypto-browserify@3.11.0
+327 silly idealTree │ ├── date-now@0.1.4
+327 silly idealTree │ ├── des.js@1.0.0
+327 silly idealTree │ ├── diffie-hellman@5.0.2
+327 silly idealTree │ ├── domain-browser@1.1.7
+327 silly idealTree │ ├── elliptic@6.3.2
+327 silly idealTree │ ├── events@1.1.1
+327 silly idealTree │ ├── evp_bytestokey@1.0.0
+327 silly idealTree │ ├── fs.realpath@1.0.0
+327 silly idealTree │ ├── glob@7.1.2
+327 silly idealTree │ ├── hash.js@1.0.3
+327 silly idealTree │ ├── http-browserify@1.7.0
+327 silly idealTree │ ├── https-browserify@0.0.1
+327 silly idealTree │ ├── ieee754@1.1.8
+327 silly idealTree │ ├── indexof@0.0.1
+327 silly idealTree │ ├── inflight@1.0.6
+327 silly idealTree │ ├── inherits@2.0.1
+327 silly idealTree │ ├── isarray@1.0.0
+327 silly idealTree │ ├── miller-rabin@4.0.0
+327 silly idealTree │ ├── minimalistic-assert@1.0.0
+327 silly idealTree │ ├── minimatch@3.0.4
+327 silly idealTree │ ├── once@1.4.0
+327 silly idealTree │ ├── os-browserify@0.2.1
+327 silly idealTree │ ├── pako@0.2.9
+327 silly idealTree │ ├── parse-asn1@5.0.0
+327 silly idealTree │ ├── path-browserify@0.0.0
+327 silly idealTree │ ├── path-is-absolute@1.0.1
+327 silly idealTree │ ├── pbkdf2@3.0.9
+327 silly idealTree │ ├── process-nextick-args@1.0.7
+327 silly idealTree │ ├── process@0.11.9
+327 silly idealTree │ ├── public-encrypt@4.0.0
+327 silly idealTree │ ├── punycode@1.4.1
+327 silly idealTree │ ├── querystring-es3@0.2.1
+327 silly idealTree │ ├── querystring@0.2.0
+327 silly idealTree │ ├── randombytes@2.0.3
+327 silly idealTree │ ├─┬ readable-stream@2.3.5
+327 silly idealTree │ │ ├── inherits@2.0.4
+327 silly idealTree │ │ ├── process-nextick-args@2.0.1
+327 silly idealTree │ │ ├── safe-buffer@5.1.2
+327 silly idealTree │ │ └── string_decoder@1.1.1
+327 silly idealTree │ ├── rimraf@2.6.1
+327 silly idealTree │ ├── ripemd160@1.0.1
+327 silly idealTree │ ├── safe-buffer@5.0.1
+327 silly idealTree │ ├── sha.js@2.4.8
+327 silly idealTree │ ├─┬ stream-browserify@2.0.1
+327 silly idealTree │ │ ├── process-nextick-args@2.0.1
+327 silly idealTree │ │ ├─┬ readable-stream@2.3.7
+327 silly idealTree │ │ │ └── inherits@2.0.4
+327 silly idealTree │ │ ├── safe-buffer@5.1.2
+327 silly idealTree │ │ └── string_decoder@1.1.1
+327 silly idealTree │ ├── string_decoder@1.0.1
+327 silly idealTree │ ├── timers-browserify@1.4.2
+327 silly idealTree │ ├── tty-browserify@0.0.0
+327 silly idealTree │ ├─┬ url@0.11.0
+327 silly idealTree │ │ └── punycode@1.3.2
+327 silly idealTree │ ├── util-deprecate@1.0.2
+327 silly idealTree │ ├── util@0.10.3
+327 silly idealTree │ ├── vm-browserify@0.0.4
+327 silly idealTree │ └── wrappy@1.0.2
+327 silly idealTree ├── minimatch@3.0.4
+327 silly idealTree ├── normalize-url@1.9.1
+327 silly idealTree ├── object-assign@4.1.1
+327 silly idealTree ├── once@1.4.0
+327 silly idealTree ├── p-limit@2.3.0
+327 silly idealTree ├── p-locate@4.1.0
+327 silly idealTree ├── p-try@2.2.0
+327 silly idealTree ├── path-exists@4.0.0
+327 silly idealTree ├── path-is-absolute@1.0.1
+327 silly idealTree ├── pify@2.3.0
+327 silly idealTree ├── pinkie-promise@2.0.1
+327 silly idealTree ├── pinkie@2.0.4
+327 silly idealTree ├── pkg-dir@4.2.0
+327 silly idealTree ├── prepend-http@1.0.4
+327 silly idealTree ├── private@0.1.8
+327 silly idealTree ├── query-string@4.3.4
+327 silly idealTree ├── regenerate@1.4.1
+327 silly idealTree ├── regenerator-runtime@0.11.1
+327 silly idealTree ├── regenerator-transform@0.10.1
+327 silly idealTree ├── regexpu-core@2.0.0
+327 silly idealTree ├── regjsgen@0.2.0
+327 silly idealTree ├── regjsparser@0.1.5
+327 silly idealTree ├── semver@6.3.0
+327 silly idealTree ├── sort-keys@1.1.2
+327 silly idealTree ├── strict-uri-encode@1.1.0
+327 silly idealTree ├── strip-ansi@3.0.1
+327 silly idealTree ├── strip-outer@1.0.1
+327 silly idealTree ├── strip-url-auth@1.0.1
+327 silly idealTree ├── supports-color@2.0.0
+327 silly idealTree ├── to-fast-properties@1.0.3
+327 silly idealTree ├── trim-repeated@1.0.0
+327 silly idealTree ├── universalify@0.1.2
+327 silly idealTree └── wrappy@1.0.2
+328 silly generateActionsToTake Starting
+329 silly install generateActionsToTake
+330 silly generateActionsToTake Finishing
+331 silly diffTrees action count 6
+332 silly diffTrees add inherits@2.0.4
+333 silly diffTrees add process-nextick-args@2.0.1
+334 silly diffTrees add safe-buffer@5.1.2
+335 silly diffTrees add string_decoder@1.1.1
+336 silly diffTrees add detect-libc@1.0.3
+337 silly diffTrees add fibers@5.0.0
+338 silly decomposeActions action count 48
+339 silly decomposeActions fetch inherits@2.0.4
+340 silly decomposeActions extract inherits@2.0.4
+341 silly decomposeActions test inherits@2.0.4
+342 silly decomposeActions preinstall inherits@2.0.4
+343 silly decomposeActions build inherits@2.0.4
+344 silly decomposeActions install inherits@2.0.4
+345 silly decomposeActions postinstall inherits@2.0.4
+346 silly decomposeActions finalize inherits@2.0.4
+347 silly decomposeActions fetch process-nextick-args@2.0.1
+348 silly decomposeActions extract process-nextick-args@2.0.1
+349 silly decomposeActions test process-nextick-args@2.0.1
+350 silly decomposeActions preinstall process-nextick-args@2.0.1
+351 silly decomposeActions build process-nextick-args@2.0.1
+352 silly decomposeActions install process-nextick-args@2.0.1
+353 silly decomposeActions postinstall process-nextick-args@2.0.1
+354 silly decomposeActions finalize process-nextick-args@2.0.1
+355 silly decomposeActions fetch safe-buffer@5.1.2
+356 silly decomposeActions extract safe-buffer@5.1.2
+357 silly decomposeActions test safe-buffer@5.1.2
+358 silly decomposeActions preinstall safe-buffer@5.1.2
+359 silly decomposeActions build safe-buffer@5.1.2
+360 silly decomposeActions install safe-buffer@5.1.2
+361 silly decomposeActions postinstall safe-buffer@5.1.2
+362 silly decomposeActions finalize safe-buffer@5.1.2
+363 silly decomposeActions fetch string_decoder@1.1.1
+364 silly decomposeActions extract string_decoder@1.1.1
+365 silly decomposeActions test string_decoder@1.1.1
+366 silly decomposeActions preinstall string_decoder@1.1.1
+367 silly decomposeActions build string_decoder@1.1.1
+368 silly decomposeActions install string_decoder@1.1.1
+369 silly decomposeActions postinstall string_decoder@1.1.1
+370 silly decomposeActions finalize string_decoder@1.1.1
+371 silly decomposeActions fetch detect-libc@1.0.3
+372 silly decomposeActions extract detect-libc@1.0.3
+373 silly decomposeActions test detect-libc@1.0.3
+374 silly decomposeActions preinstall detect-libc@1.0.3
+375 silly decomposeActions build detect-libc@1.0.3
+376 silly decomposeActions install detect-libc@1.0.3
+377 silly decomposeActions postinstall detect-libc@1.0.3
+378 silly decomposeActions finalize detect-libc@1.0.3
+379 silly decomposeActions fetch fibers@5.0.0
+380 silly decomposeActions extract fibers@5.0.0
+381 silly decomposeActions test fibers@5.0.0
+382 silly decomposeActions preinstall fibers@5.0.0
+383 silly decomposeActions build fibers@5.0.0
+384 silly decomposeActions install fibers@5.0.0
+385 silly decomposeActions postinstall fibers@5.0.0
+386 silly decomposeActions finalize fibers@5.0.0
+387 silly runTopLevelLifecycles Starting
+388 silly executeActions Starting
+389 silly install executeActions
+390 silly doSerial global-install 0
+391 silly doParallel fetch 6
+392 verbose correctMkdir /Users/jamessangalli/.npm/_locks correctMkdir not in flight; initializing
+393 verbose lock using /Users/jamessangalli/.npm/_locks/staging-a7475b231ab0b157.lock for /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging
+394 silly doParallel extract 6
+395 silly extract inherits@2.0.4
+396 silly extract process-nextick-args@2.0.1
+397 silly extract safe-buffer@5.1.2
+398 silly extract string_decoder@1.1.1
+399 silly extract detect-libc@1.0.3
+400 silly extract fibers@5.0.0
+401 verbose unbuild node_modules/.staging/inherits-23d842c3
+402 verbose unbuild node_modules/.staging/process-nextick-args-cd021f3f
+403 verbose unbuild node_modules/.staging/string_decoder-4cb220f5
+404 verbose unbuild node_modules/.staging/safe-buffer-993c25bc
+405 verbose unbuild node_modules/.staging/detect-libc-66fbdd7f
+406 verbose unbuild node_modules/.staging/fibers-ab84432d
+407 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/inherits-23d842c3 is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+408 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/inherits-23d842c3
+409 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/process-nextick-args-cd021f3f is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+410 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/process-nextick-args-cd021f3f
+411 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/string_decoder-4cb220f5 is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+412 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/string_decoder-4cb220f5
+413 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/safe-buffer-993c25bc is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+414 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/safe-buffer-993c25bc
+415 verbose tar unpack /Users/jamessangalli/.npm/inherits/2.0.4/package.tgz
+416 verbose tar unpacking to /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/inherits-23d842c3
+417 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/inherits-23d842c3 is being purged
+418 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/inherits-23d842c3
+419 verbose tar unpack /Users/jamessangalli/.npm/process-nextick-args/2.0.1/package.tgz
+420 verbose tar unpacking to /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/process-nextick-args-cd021f3f
+421 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/process-nextick-args-cd021f3f is being purged
+422 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/process-nextick-args-cd021f3f
+423 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/detect-libc-66fbdd7f is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+424 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/detect-libc-66fbdd7f
+425 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/fibers-ab84432d is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+426 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/fibers-ab84432d
+427 verbose tar unpack /Users/jamessangalli/.npm/string_decoder/1.1.1/package.tgz
+428 verbose tar unpacking to /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/string_decoder-4cb220f5
+429 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/string_decoder-4cb220f5 is being purged
+430 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/string_decoder-4cb220f5
+431 verbose tar unpack /Users/jamessangalli/.npm/safe-buffer/5.1.2/package.tgz
+432 verbose tar unpacking to /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/safe-buffer-993c25bc
+433 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/safe-buffer-993c25bc is being purged
+434 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/safe-buffer-993c25bc
+435 silly gunzTarPerm modes [ '755', '644' ]
+436 silly gunzTarPerm modes [ '755', '644' ]
+437 verbose tar unpack /Users/jamessangalli/.npm/detect-libc/1.0.3/package.tgz
+438 verbose tar unpacking to /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/detect-libc-66fbdd7f
+439 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/detect-libc-66fbdd7f is being purged
+440 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/detect-libc-66fbdd7f
+441 verbose tar unpack /Users/jamessangalli/.npm/fibers/5.0.0/package.tgz
+442 verbose tar unpacking to /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/fibers-ab84432d
+443 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/fibers-ab84432d is being purged
+444 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/fibers-ab84432d
+445 silly gunzTarPerm modes [ '755', '644' ]
+446 silly gunzTarPerm modes [ '755', '644' ]
+447 silly gunzTarPerm modes [ '755', '644' ]
+448 silly gunzTarPerm modes [ '755', '644' ]
+449 silly gunzTarPerm extractEntry package.json
+450 silly gunzTarPerm extractEntry package.json
+451 silly gunzTarPerm extractEntry package.json
+452 silly gunzTarPerm extractEntry package.json
+453 silly gunzTarPerm extractEntry package.json
+454 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+455 silly gunzTarPerm extractEntry LICENSE
+456 silly gunzTarPerm extractEntry inherits_browser.js
+457 silly gunzTarPerm extractEntry inherits.js
+458 silly gunzTarPerm extractEntry index.js
+459 silly gunzTarPerm extractEntry license.md
+460 silly gunzTarPerm extractEntry .travis.yml
+461 silly gunzTarPerm extractEntry LICENSE
+462 silly gunzTarPerm extractEntry index.d.ts
+463 silly gunzTarPerm extractEntry index.js
+464 silly gunzTarPerm extractEntry .npmignore
+465 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+466 silly gunzTarPerm extractEntry README.md
+467 silly gunzTarPerm extractEntry src/libcoro/LICENSE
+468 silly gunzTarPerm extractEntry src/libcoro/README
+469 silly gunzTarPerm extractEntry readme.md
+470 silly gunzTarPerm extractEntry LICENSE
+471 silly gunzTarPerm extractEntry README.md
+472 silly gunzTarPerm extractEntry README.md
+473 silly gunzTarPerm extractEntry lib/string_decoder.js
+474 silly gunzTarPerm extractEntry LICENSE
+475 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+476 silly gunzTarPerm extractEntry bin/detect-libc.js
+477 silly gunzTarPerm modified mode [ 'bin/detect-libc.js', 509, 493 ]
+478 silly gunzTarPerm extractEntry lib/detect-libc.js
+479 silly gunzTarPerm modified mode [ 'lib/detect-libc.js', 436, 420 ]
+480 silly gunzTarPerm extractEntry LICENSE
+481 silly gunzTarPerm extractEntry README.md
+482 silly gunzTarPerm extractEntry bin/repl
+483 silly gunzTarPerm extractEntry src/libcoro/conftest.c
+484 silly gunzTarPerm extractEntry src/libcoro/coro.c
+485 silly gunzTarPerm extractEntry src/coroutine.cc
+486 silly gunzTarPerm extractEntry src/fibers.cc
+487 silly gunzTarPerm extractEntry binding.gyp
+488 silly gunzTarPerm extractEntry src/libcoro/coro.h
+489 silly gunzTarPerm extractEntry src/coroutine.h
+490 silly gunzTarPerm extractEntry src/v8-version.h
+491 silly gunzTarPerm extractEntry test/already-running.js
+492 silly gunzTarPerm extractEntry test/async-hooks.js
+493 silly gunzTarPerm extractEntry test/bad-context.js
+494 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/process-nextick-args-cd021f3f/node_modules is being purged
+495 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/process-nextick-args-cd021f3f/node_modules
+496 silly gunzTarPerm extractEntry build.js
+497 silly gunzTarPerm extractEntry test/child-process.js
+498 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/inherits-23d842c3/node_modules is being purged
+499 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/inherits-23d842c3/node_modules
+500 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/string_decoder-4cb220f5/node_modules is being purged
+501 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/string_decoder-4cb220f5/node_modules
+502 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/safe-buffer-993c25bc/node_modules is being purged
+503 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/safe-buffer-993c25bc/node_modules
+504 silly gunzTarPerm extractEntry test/cleanup.js
+505 silly gunzTarPerm extractEntry test/current.js
+506 silly gunzTarPerm extractEntry test/exec.js
+507 silly gunzTarPerm extractEntry test/exit.js
+508 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/detect-libc-66fbdd7f/node_modules is being purged
+509 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/detect-libc-66fbdd7f/node_modules
+510 silly gunzTarPerm extractEntry fibers.js
+511 silly gunzTarPerm extractEntry test/fibonacci.js
+512 silly gunzTarPerm extractEntry test/finish-multiple.js
+513 silly gunzTarPerm extractEntry test/future-exception.js
+514 silly gunzTarPerm extractEntry future.js
+515 silly gunzTarPerm extractEntry test/future.js
+516 silly gunzTarPerm extractEntry test/illegal-yield.js
+517 silly gunzTarPerm extractEntry test/pool.js
+518 silly gunzTarPerm extractEntry test/process-title.js
+519 silly gunzTarPerm extractEntry quick-test.js
+520 silly gunzTarPerm extractEntry test/stack-overflow.js
+521 silly gunzTarPerm extractEntry test/stack-overflow2.js
+522 silly gunzTarPerm extractEntry test/started.js
+523 silly gunzTarPerm extractEntry test.js
+524 silly gunzTarPerm extractEntry test/unwind.js
+525 silly gunzTarPerm extractEntry package.json
+526 silly gunzTarPerm extractEntry ISSUE_TEMPLATE.md
+527 silly gunzTarPerm extractEntry README.md
+528 silly gunzTarPerm extractEntry bin/darwin-x64-72/fibers.node
+529 silly gunzTarPerm extractEntry bin/darwin-x64-83/fibers.node
+530 silly gunzTarPerm extractEntry bin/linux-x64-72-glibc/fibers.node
+531 silly gunzTarPerm extractEntry bin/linux-x64-72-musl/fibers.node
+532 silly gunzTarPerm extractEntry bin/linux-x64-83-glibc/fibers.node
+533 silly gunzTarPerm extractEntry bin/linux-x64-83-musl/fibers.node
+534 silly gunzTarPerm extractEntry bin/win32-x64-72/fibers.node
+535 silly gunzTarPerm extractEntry bin/win32-x64-83/fibers.node
+536 silly gunzTarPerm extractEntry .travis.yml
+537 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/fibers-ab84432d/node_modules is being purged
+538 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging/fibers-ab84432d/node_modules
+539 silly doParallel preinstall 6
+540 silly preinstall inherits@2.0.4
+541 info lifecycle inherits@2.0.4~preinstall: inherits@2.0.4
+542 silly preinstall process-nextick-args@2.0.1
+543 info lifecycle process-nextick-args@2.0.1~preinstall: process-nextick-args@2.0.1
+544 silly preinstall safe-buffer@5.1.2
+545 info lifecycle safe-buffer@5.1.2~preinstall: safe-buffer@5.1.2
+546 silly preinstall string_decoder@1.1.1
+547 info lifecycle string_decoder@1.1.1~preinstall: string_decoder@1.1.1
+548 silly preinstall detect-libc@1.0.3
+549 info lifecycle detect-libc@1.0.3~preinstall: detect-libc@1.0.3
+550 silly preinstall fibers@5.0.0
+551 info lifecycle fibers@5.0.0~preinstall: fibers@5.0.0
+552 silly lifecycle inherits@2.0.4~preinstall: no script for preinstall, continuing
+553 silly lifecycle process-nextick-args@2.0.1~preinstall: no script for preinstall, continuing
+554 silly lifecycle safe-buffer@5.1.2~preinstall: no script for preinstall, continuing
+555 silly lifecycle string_decoder@1.1.1~preinstall: no script for preinstall, continuing
+556 silly lifecycle detect-libc@1.0.3~preinstall: no script for preinstall, continuing
+557 silly lifecycle fibers@5.0.0~preinstall: no script for preinstall, continuing
+558 silly doReverseSerial remove 0
+559 silly doSerial move 0
+560 silly doSerial finalize 6
+561 silly finalize /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/meteor-node-stubs/node_modules/readable-stream/node_modules/inherits
+562 silly finalize /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/meteor-node-stubs/node_modules/readable-stream/node_modules/process-nextick-args
+563 silly finalize /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/meteor-node-stubs/node_modules/readable-stream/node_modules/safe-buffer
+564 silly finalize /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/meteor-node-stubs/node_modules/readable-stream/node_modules/string_decoder
+565 silly finalize /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+566 silly finalize /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+567 silly doSerial build 6
+568 silly build inherits@2.0.4
+569 info linkStuff inherits@2.0.4
+570 silly linkStuff inherits@2.0.4 has /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/meteor-node-stubs/node_modules/readable-stream/node_modules as its parent node_modules
+571 verbose linkBins inherits@2.0.4
+572 verbose linkMans inherits@2.0.4
+573 silly build process-nextick-args@2.0.1
+574 info linkStuff process-nextick-args@2.0.1
+575 silly linkStuff process-nextick-args@2.0.1 has /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/meteor-node-stubs/node_modules/readable-stream/node_modules as its parent node_modules
+576 verbose linkBins process-nextick-args@2.0.1
+577 verbose linkMans process-nextick-args@2.0.1
+578 silly build safe-buffer@5.1.2
+579 info linkStuff safe-buffer@5.1.2
+580 silly linkStuff safe-buffer@5.1.2 has /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/meteor-node-stubs/node_modules/readable-stream/node_modules as its parent node_modules
+581 verbose linkBins safe-buffer@5.1.2
+582 verbose linkMans safe-buffer@5.1.2
+583 silly build string_decoder@1.1.1
+584 info linkStuff string_decoder@1.1.1
+585 silly linkStuff string_decoder@1.1.1 has /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/meteor-node-stubs/node_modules/readable-stream/node_modules as its parent node_modules
+586 verbose linkBins string_decoder@1.1.1
+587 verbose linkMans string_decoder@1.1.1
+588 silly build detect-libc@1.0.3
+589 info linkStuff detect-libc@1.0.3
+590 silly linkStuff detect-libc@1.0.3 has /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules as its parent node_modules
+591 verbose linkBins detect-libc@1.0.3
+592 verbose linkBins [ { 'detect-libc': './bin/detect-libc.js' },
+592 verbose linkBins   '/Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.bin',
+592 verbose linkBins   false ]
+593 verbose linkMans detect-libc@1.0.3
+594 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.bin/detect-libc is being purged
+595 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.bin/detect-libc
+596 silly build fibers@5.0.0
+597 info linkStuff fibers@5.0.0
+598 silly linkStuff fibers@5.0.0 has /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules as its parent node_modules
+599 verbose linkBins fibers@5.0.0
+600 verbose linkMans fibers@5.0.0
+601 silly doSerial global-link 0
+602 silly doParallel update-linked 0
+603 silly doSerial install 6
+604 silly install inherits@2.0.4
+605 info lifecycle inherits@2.0.4~install: inherits@2.0.4
+606 silly lifecycle inherits@2.0.4~install: no script for install, continuing
+607 silly install process-nextick-args@2.0.1
+608 info lifecycle process-nextick-args@2.0.1~install: process-nextick-args@2.0.1
+609 silly lifecycle process-nextick-args@2.0.1~install: no script for install, continuing
+610 silly install safe-buffer@5.1.2
+611 info lifecycle safe-buffer@5.1.2~install: safe-buffer@5.1.2
+612 silly lifecycle safe-buffer@5.1.2~install: no script for install, continuing
+613 silly install string_decoder@1.1.1
+614 info lifecycle string_decoder@1.1.1~install: string_decoder@1.1.1
+615 silly lifecycle string_decoder@1.1.1~install: no script for install, continuing
+616 silly install detect-libc@1.0.3
+617 info lifecycle detect-libc@1.0.3~install: detect-libc@1.0.3
+618 silly lifecycle detect-libc@1.0.3~install: no script for install, continuing
+619 silly install fibers@5.0.0
+620 info lifecycle fibers@5.0.0~install: fibers@5.0.0
+621 verbose lifecycle fibers@5.0.0~install: unsafe-perm in lifecycle true
+622 verbose lifecycle fibers@5.0.0~install: PATH: /Users/jamessangalli/.meteor/packages/meteor-tool/.1.4.3_1.blaytd.c2y3s++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/bin/node-gyp-bin:/Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers/node_modules/.bin:/Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.bin:/Users/jamessangalli/.meteor/packages/meteor-tool/.1.4.3_1.blaytd.c2y3s++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin:/Users/jamessangalli/.meteor/packages/meteor-tool/.1.4.3_1.blaytd.c2y3s++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64:/Users/jamessangalli/.meteor/packages/meteor-tool/.1.4.3_1.blaytd.c2y3s++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/.bin:/Users/jamessangalli/Downloads/google-cloud-sdk/bin:/Users/jamessangalli/.nvm/versions/node/v14.15.4/bin:/Users/jamessangalli/.nix-profile/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/jamessangalli/Library/Android/sdk/platform-tools:/Users/jamessangalli/.nix-profile/bin:/Users/jamessangalli/.dotnet/tools
+623 verbose lifecycle fibers@5.0.0~install: CWD: /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+624 silly lifecycle fibers@5.0.0~install: Args: [ '-c', 'node build.js || nodejs build.js' ]
+625 info lifecycle fibers@5.0.0~install: Failed to exec install script
+626 verbose unlock done using /Users/jamessangalli/.npm/_locks/staging-a7475b231ab0b157.lock for /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/.staging
+627 silly rollbackFailedOptional Starting
+628 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+629 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+630 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+631 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+632 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+633 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+634 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+635 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+636 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+637 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+638 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+639 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+640 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+641 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+642 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+643 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+644 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+645 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+646 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+647 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+648 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+649 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+650 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+651 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+652 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+653 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+654 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+655 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+656 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+657 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+658 silly gentlyRm /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers is being purged from base /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+659 verbose gentlyRm don't care about contents; nuking /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+660 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+661 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+662 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+663 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+664 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+665 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+666 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+667 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/detect-libc
+668 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+669 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+670 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+671 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+672 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+673 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+674 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+675 silly vacuum-fs purging /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules/fibers
+676 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+677 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+678 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+679 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+680 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+681 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+682 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+683 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+684 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+685 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+686 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+687 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+688 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+689 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+690 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+691 silly vacuum-fs quitting because other entries in /Users/jamessangalli/Documents/projects/BitcoinProjects.net/node_modules
+692 silly rollbackFailedOptional Finishing
+693 silly runTopLevelLifecycles Finishing
+694 silly install printInstalled
+695 verbose stack Error: fibers@5.0.0 install: `node build.js || nodejs build.js`
+695 verbose stack spawn ENOENT
+695 verbose stack     at ChildProcess.<anonymous> (/Users/jamessangalli/.meteor/packages/meteor-tool/.1.4.3_1.blaytd.c2y3s++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/utils/spawn.js:33:16)
+695 verbose stack     at emitTwo (events.js:87:13)
+695 verbose stack     at ChildProcess.emit (events.js:172:7)
+695 verbose stack     at maybeClose (internal/child_process.js:854:16)
+695 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:222:5)
+696 verbose pkgid fibers@5.0.0
+697 verbose cwd /Users/jamessangalli/Documents/projects/BitcoinProjects.net
+698 error Darwin 20.3.0
+699 error argv "/Users/jamessangalli/.meteor/packages/meteor-tool/.1.4.3_1.blaytd.c2y3s++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node" "/Users/jamessangalli/.meteor/packages/meteor-tool/.1.4.3_1.blaytd.c2y3s++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "--save" "fibers"
+700 error node v4.7.3
+701 error npm  v4.1.2
+702 error file sh
+703 error code ELIFECYCLE
+704 error errno ENOENT
+705 error syscall spawn
+706 error fibers@5.0.0 install: `node build.js || nodejs build.js`
+706 error spawn ENOENT
+707 error Failed at the fibers@5.0.0 install script 'node build.js || nodejs build.js'.
+707 error Make sure you have the latest version of node.js and npm installed.
+707 error If you do, this is most likely a problem with the fibers package,
+707 error not with npm itself.
+707 error Tell the author that this fails on your system:
+707 error     node build.js || nodejs build.js
+707 error You can get information on how to open an issue for this project with:
+707 error     npm bugs fibers
+707 error Or if that isn't available, you can get their info via:
+707 error     npm owner ls fibers
+707 error There is likely additional logging output above.
+708 verbose exit [ 1, true ]

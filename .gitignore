@@ -2,3 +2,5 @@
 .idea
 node_modules
 private/graphics/favicon.png
+.DS_Store
+bundle
