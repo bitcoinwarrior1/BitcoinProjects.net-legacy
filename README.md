@@ -1,8 +1,6 @@
-
-Project list:
-https://docs.google.com/spreadsheets/d/1mabXCaQwt8pxq45xsqosEAUqZ-F6csD3r771DxE9fJE/edit#gid=0
-
 This repo is a originally forked from [State of the Dapps](https://github.com/state-of-the-dapps/state-of-the-dapps) but has been altered for Bitcoin Projects and is an independant repo, project and website.
+
+Visit [bitcoinprojects.net](https://bitcoinprojects.net/) for instructions on adding your project. This project is referenced on the [bitcoin.org](https://bitcoin.org/en/resources) website. 
 
 ## Development
 
